@@ -12,7 +12,7 @@ collections:
   - name: "content"
     label: "Nội dung website"
     files:
-      - file: "content.json"
+      - file: "public/content.json"
         label: "Nội dung chính"
         name: "main_content"
         fields:
