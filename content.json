@@ -1,0 +1,132 @@
+{
+    "nav_items": [
+        {
+            "label": "VỀ CHÚNG TÔI",
+            "href": "#story",
+            "view": "about"
+        },
+        {
+            "label": "DỊCH VỤ",
+            "href": "#services",
+            "view": "services"
+        },
+        {
+            "label": "DỰ ÁN",
+            "href": "#projects",
+            "view": "home"
+        },
+        {
+            "label": "CẨM NANG",
+            "href": "#blog",
+            "view": "handbook"
+        },
+        {
+            "label": "LIÊN HỆ",
+            "href": "#contact",
+            "view": "contact"
+        }
+    ],
+    "hero_images": [
+        "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=2000",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=80&w=2000",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=2000",
+        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=2000"
+    ],
+    "project_categories": [
+        {
+            "id": "all",
+            "label": "Tất cả",
+            "header": "TẤT CẢ DỰ ÁN"
+        },
+        {
+            "id": "arch",
+            "label": "Thiết kế kiến trúc",
+            "header": "THIẾT KẾ KIẾN TRÚC"
+        },
+        {
+            "id": "interior",
+            "label": "Thiết kế nội thất",
+            "header": "THIẾT KẾ NỘI THẤT"
+        },
+        {
+            "id": "construction",
+            "label": "Thi Công",
+            "header": "THI CÔNG HOÀN THIỆN"
+        },
+        {
+            "id": "cgi",
+            "label": "Diễn họa CGI",
+            "header": "DIỄN HỌA CGI"
+        },
+        {
+            "id": "ai",
+            "label": "Dịch Vụ AI",
+            "header": "SÁNG TẠO BẰNG AI"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Indochine Apartment",
+            "location": "Hà Nội",
+            "year": "2024",
+            "category": "interior",
+            "type": "Thi công",
+            "style": "Indochine",
+            "floors": "1 Tầng",
+            "area": "85m2",
+            "description": "Căn hộ phong cách Indochine với sự kết hợp tinh tế giữa nét hoài cổ và hiện đại. Không gian được tối ưu hóa với các chi tiết gỗ truyền thống kết hợp vật liệu cao cấp, tạo nên cảm giác ấm cúng và sang trọng.",
+            "gallery": [
+                "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1200",
+                "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200",
+                "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&q=80&w=1200",
+                "https://images.unsplash.com/photo-1615529328331-f8917597711f?auto=format&fit=crop&q=80&w=1200"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "L's Townhouse",
+            "location": "Hà Nội",
+            "year": "2023",
+            "category": "arch",
+            "type": "Thiết kế",
+            "style": "Hiện đại",
+            "floors": "3 Tầng",
+            "area": "6x18m",
+            "description": "Nhà phố hiện đại tối ưu không gian và ánh sáng tự nhiên. Thiết kế tập trung vào sự thông thoáng, sử dụng kính cường lực lớn và các khoảng thông tầng đón gió tự nhiên.",
+            "gallery": [
+                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200",
+                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
+                "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1200",
+                "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=2000"
+            ]
+        }
+    ],
+    "services": [
+        {
+            "title": "THIẾT KẾ KIẾN TRÚC",
+            "img": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=600"
+        },
+        {
+            "title": "THIẾT KẾ NỘI THẤT",
+            "img": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=600"
+        },
+        {
+            "title": "THI CÔNG HOÀN THIỆN",
+            "img": "https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=600"
+        },
+        {
+            "title": "TƯ VẤN GIÁM SÁT",
+            "img": "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=600"
+        },
+        {
+            "title": "DIỄN HOẠ CGI",
+            "img": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=80&w=600"
+        },
+        {
+            "title": "SÁNG TẠO BẰNG AI",
+            "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600"
+        }
+    ]
+}

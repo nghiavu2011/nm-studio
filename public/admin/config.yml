@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dwupjsbf0
+    api_key: "472356111769134"
+
+collections:
+  - name: "content"
+    label: "Nội dung website"
+    files:
+      - file: "content.json"
+        label: "Nội dung chính"
+        name: "main_content"
+        fields:
+          - { label: "Menu điều hướng", name: "nav_items", widget: "list", fields: [
+              { label: "Nhãn", name: "label", widget: "string" },
+              { label: "Đường dẫn", name: "href", widget: "string" },
+              { label: "View", name: "view", widget: "string" }
+            ]}
+          - { label: "Ảnh nền Hero", name: "hero_images", widget: "list", field: { label: "Ảnh", name: "image", widget: "image" }}
+          - { label: "Danh mục dự án", name: "project_categories", widget: "list", fields: [
+              { label: "ID", name: "id", widget: "string" },
+              { label: "Nhãn", name: "label", widget: "string" },
+              { label: "Tiêu đề Header", name: "header", widget: "string" }
+            ]}
+          - { label: "Danh sách dự án", name: "projects", widget: "list", fields: [
+              { label: "ID", name: "id", widget: "number" },
+              { label: "Tiêu đề", name: "title", widget: "string" },
+              { label: "Vị trí", name: "location", widget: "string" },
+              { label: "Năm", name: "year", widget: "string" },
+              { label: "Danh mục", name: "category", widget: "select", options: ["arch", "interior", "construction", "cgi", "ai"] },
+              { label: "Loại hình", name: "type", widget: "string" },
+              { label: "Phong cách", name: "style", widget: "string" },
+              { label: "Số tầng/Quy mô", name: "floors", widget: "string" },
+              { label: "Diện tích", name: "area", widget: "string" },
+              { label: "Mô tả", name: "description", widget: "text" },
+              { label: "Bộ sưu tập ảnh", name: "gallery", widget: "list", field: { label: "Ảnh", name: "image", widget: "image" }}
+            ]}
