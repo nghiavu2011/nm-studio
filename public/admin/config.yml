@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: nghiavu2011/nm-studio
   branch: main
 
 media_library:
