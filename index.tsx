@@ -203,7 +203,7 @@ const Header = ({ onNavigate, currentView, onScrollToProjects, navItems }: { onN
             </a>
           ))}
           <a
-            href="/yeu-cau-thiet-ke.html"
+            href="yeu-cau-thiet-ke.html"
             target="_blank"
             className={`text-[10px] font-bold uppercase tracking-widest px-5 py-2.5 border-2 border-brand-primary hover:bg-brand-primary hover:text-white transition-all ${textColorClass}`}
           >
@@ -821,7 +821,7 @@ const App = () => {
               <li><a href="#projects" onClick={(e) => { e.preventDefault(); scrollToProjects(); }} className="hover:text-white transition-colors">DỰ ÁN</a></li>
               <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('handbook'); }} className="hover:text-white transition-colors">CẨM NANG</a></li>
               <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('contact'); }} className="hover:text-white transition-colors">LIÊN HỆ</a></li>
-              <li><a href="/yeu-cau-thiet-ke.html" target="_blank" className="text-brand-primary hover:text-white transition-colors">GỬI YÊU CẦU THIẾT KẾ</a></li>
+              <li><a href="yeu-cau-thiet-ke.html" target="_blank" className="text-brand-primary hover:text-white transition-colors">GỬI YÊU CẦU THIẾT KẾ</a></li>
             </ul>
           </div>
 
