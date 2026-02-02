@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư yêu cầu thiết kế | N&M Studio</title>
+    <meta name="description"
+        content="Design Brief - Nơi những ý tưởng kiến trúc bắt đầu. Hãy chia sẻ với N&M Studio về ngôi nhà trong mơ của bạn.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="brief-style.css">
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="N&M Studio Logo">
+            </div>
+            <h1>THƯ YÊU CẦU THIẾT KẾ</h1>
+            <p>Chào mừng bạn đến với N&M Studio. Hãy dành vài phút để chia sẻ thói quen sinh hoạt và sở thích của bạn.
+                Những thông tin này sẽ giúp chúng tôi biến ý tưởng thành hiện thực.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <form class="form-container" action="https://formspree.io/f/xvgzbgzl" method="POST">
+            <!-- Formspree hidden fields for dual email or redirection could be added if using a paid plan, 
+                 but for free, we'll guide the user to add secondary email in Formspree dashboard -->
+
+            <section class="form-section">
+                <h2 class="section-title">01. THÔNG TIN CƠ BẢN</h2>
+
+                <div class="form-group">
+                    <label for="name">0. Tên bạn là gì?</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lifestyle">1. Hãy nói qua phong cách sống của các bạn hiện tại *</label>
+                    <textarea id="lifestyle" name="lifestyle"
+                        placeholder="Chia sẻ về thói quen, công việc hoặc sở thích..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">2. Địa chỉ ngôi nhà bạn đang định thiết kế *</label>
+                    <input type="text" id="address" name="address" placeholder="Tỉnh/Thành phố, Quận/Huyện..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="area">3. Diện tích đất, và diện tích nhà của bạn? *</label>
+                    <input type="text" id="area" name="area" placeholder="Ví dụ: Đất 100m2, Xây dựng 80m2 x 3 tầng"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>4. Hướng chính của căn nhà là hướng nào?</label>
+                    <div class="options-grid">
+                        <div class="option-item">
+                            <input type="radio" id="dir_n" name="house_direction" value="Bắc">
+                            <label for="dir_n">Bắc</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="radio" id="dir_s" name="house_direction" value="Nam">
+                            <label for="dir_s">Nam</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="radio" id="dir_e" name="house_direction" value="Đông">
+                            <label for="dir_e">Đông</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="radio" id="dir_w" name="house_direction" value="Tây">
+                            <label for="dir_w">Tây</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="radio" id="dir_ne" name="house_direction" value="Đông Bắc">
+                            <label for="dir_ne">Đông Bắc</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="radio" id="dir_se" name="house_direction" value="Đông Nam">
+                            <label for="dir_se">Đông Nam</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="radio" id="dir_nw" name="house_direction" value="Tây Bắc">
+                            <label for="dir_nw">Tây Bắc</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="radio" id="dir_sw" name="house_direction" value="Tây Nam">
+                            <label for="dir_sw">Tây Nam</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>5. Tình trạng của ngôi nhà?</label>
+                    <div class="options-grid">
+                        <div class="option-item">
+                            <input type="radio" id="status_old" name="house_status" value="Cũ">
+                            <label for="status_old">Cũ</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="radio" id="status_raw" name="house_status" value="Bàn giao thô">
+                            <label for="status_raw">Bàn giao thô</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="radio" id="status_partial" name="house_status"
+                                value="Bàn giao hoàn thiện một phần">
+                            <label for="status_partial">Hoàn thiện một phần</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>6. Mục đích sử dụng trong thời gian gần nhất</label>
+                    <div class="options-grid">
+                        <div class="option-item">
+                            <input type="checkbox" id="use_stay" name="purpose[]" value="Nhà ở">
+                            <label for="use_stay">Nhà ở</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="checkbox" id="use_office" name="purpose[]" value="Làm văn phòng">
+                            <label for="use_office">Làm văn phòng</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="checkbox" id="use_rent" name="purpose[]" value="Cho thuê">
+                            <label for="use_rent">Cho thuê</label>
+                        </div>
+                        <div class="option-item">
+                            <input type="checkbox" id="use_mixed" name="purpose[]" value="Văn phòng kết hợp ở">
+                            <label for="use_mixed">Hỗn hợp</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2 class="section-title">02. KHÔNG GIAN & TIỆN NGHI</h2>
+
+                <div class="form-group">
+                    <label>7. Những không gian nào có trong căn nhà?</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="checkbox" name="spaces[]" value="Sân vườn"><label>Sân
+                                vườn</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]"
+                                value="Garage"><label>Garage</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]" value="Bếp"><label>Bếp</label>
+                        </div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]" value="Phòng ăn"><label>Phòng
+                                ăn</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]" value="Phòng khách"><label>Phòng
+                                khách</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]" value="Thang máy"><label>Thang
+                                máy</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]" value="Ban công"><label>Ban
+                                công/Logia</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]"
+                                value="Phòng ngủ lớn"><label>Master Bed</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]"
+                                value="Phòng trẻ em"><label>Phòng trẻ em</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]"
+                                value="Phòng người già"><label>Người lớn tuổi</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]"
+                                value="Phòng làm việc"><label>Thư phòng</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]"
+                                value="Sinh hoạt chung"><label>SH chung</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]" value="Thông tầng"><label>Thông
+                                tầng</label></div>
+                        <div class="option-item"><input type="checkbox" name="spaces[]" value="Giặt sấy"><label>Phòng
+                                giặt</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="style_words">8. Từ nào có thể diễn tả phong cách mong muốn? *</label>
+                    <div class="style-cards-grid">
+                        <label class="style-card">
+                            <input type="checkbox" name="styles[]" value="Modern Minimalism - Light">
+                            <div class="style-card-image">
+                                <img src="Modern Mininalisim - Light scheme.png" alt="Modern Minimalism Light">
+                            </div>
+                            <div class="style-card-content">
+                                <span class="style-card-title">Modern Light</span>
+                                <span class="style-card-desc">Tối giản sáng</span>
+                            </div>
+                            <div class="style-card-check">✓</div>
+                        </label>
+
+                        <label class="style-card">
+                            <input type="checkbox" name="styles[]" value="Modern Minimalism - Dark">
+                            <div class="style-card-image">
+                                <img src="Modern Mininalisim - Dark scheme.png" alt="Modern Minimalism Dark">
+                            </div>
+                            <div class="style-card-content">
+                                <span class="style-card-title">Modern Dark</span>
+                                <span class="style-card-desc">Tối giản tối</span>
+                            </div>
+                            <div class="style-card-check">✓</div>
+                        </label>
+
+                        <label class="style-card">
+                            <input type="checkbox" name="styles[]" value="Contemporary Parisian">
+                            <div class="style-card-image">
+                                <img src="Contemporary - Parisian.png" alt="Parisian">
+                            </div>
+                            <div class="style-card-content">
+                                <span class="style-card-title">Parisian</span>
+                                <span class="style-card-desc">Phong cách Paris</span>
+                            </div>
+                            <div class="style-card-check">✓</div>
+                        </label>
+
+                        <label class="style-card">
+                            <input type="checkbox" name="styles[]" value="Wabi sabi - Japandi">
+                            <div class="style-card-image">
+                                <img src="Wabi sabi - Japandi.png" alt="Wabi-sabi Japandi">
+                            </div>
+                            <div class="style-card-content">
+                                <span class="style-card-title">Wabi-sabi</span>
+                                <span class="style-card-desc">Vẻ đẹp không hoàn hảo</span>
+                            </div>
+                            <div class="style-card-check">✓</div>
+                        </label>
+
+                        <label class="style-card">
+                            <input type="checkbox" name="styles[]" value="Industrial Modern">
+                            <div class="style-card-image">
+                                <img src="Industrial - Modern.png" alt="Industrial Modern">
+                            </div>
+                            <div class="style-card-content">
+                                <span class="style-card-title">Industrial</span>
+                                <span class="style-card-desc">Công nghiệp hiện đại</span>
+                            </div>
+                            <div class="style-card-check">✓</div>
+                        </label>
+
+                        <label class="style-card">
+                            <input type="checkbox" name="styles[]" value="Farmhouse Modern">
+                            <div class="style-card-image">
+                                <img src="Framhouse - Modern.png" alt="Farmhouse Modern">
+                            </div>
+                            <div class="style-card-content">
+                                <span class="style-card-title">Farmhouse</span>
+                                <span class="style-card-desc">Nông trại hiện đại</span>
+                            </div>
+                            <div class="style-card-check">✓</div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>9. Bạn thích có cây xanh ở đâu? *</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="checkbox" name="plants[]" value="Trong nhà"><label>Trong
+                                nhà</label></div>
+                        <div class="option-item"><input type="checkbox" name="plants[]"
+                                value="Logia/Ban công"><label>Logia/Ban công</label></div>
+                        <div class="option-item"><input type="checkbox" name="plants[]" value="Trong phòng"><label>Trong
+                                phòng</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="materials">10. Tông màu, Vật liệu mà bạn mong muốn *</label>
+                    <input type="text" id="materials" name="materials" placeholder="Gỗ, đá, tông trung tính..."
+                        required>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2 class="section-title">03. CHI TIẾT CÔNG NĂNG</h2>
+
+                <div class="form-group">
+                    <label>11. Nhu cầu tiếp khách ở nhà? *</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="radio" name="guests" value="Không bao giờ"><label>Không
+                                bao giờ</label></div>
+                        <div class="option-item"><input type="radio" name="guests" value="Rất ít"><label>Rất ít (1
+                                lần/tháng)</label></div>
+                        <div class="option-item"><input type="radio" name="guests" value="Nhiều"><label>Nhiều (hàng
+                                tuần)</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="living_room">12. Bạn muốn có gì trong phòng khách? *</label>
+                    <input type="text" id="living_room" name="living_room" placeholder="Sofa lớn, kệ tivi, bể cá..."
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>12a. Nhu cầu ở khu vực bếp</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="checkbox" name="kitchen[]" value="Lò vi sóng âm"><label>Lò
+                                vi sóng âm</label></div>
+                        <div class="option-item"><input type="checkbox" name="kitchen[]" value="Tủ lạnh đơn"><label>Tủ
+                                lạnh đơn</label></div>
+                        <div class="option-item"><input type="checkbox" name="kitchen[]" value="Tủ lạnh SBS"><label>Tủ
+                                lạnh SBS</label></div>
+                        <div class="option-item"><input type="checkbox" name="kitchen[]" value="Bếp từ"><label>Bếp
+                                từ</label></div>
+                        <div class="option-item"><input type="checkbox" name="kitchen[]"
+                                value="Hút mùi độc lập"><label>Hút mùi độc lập</label></div>
+                        <div class="option-item"><input type="checkbox" name="kitchen[]"
+                                value="Hút mùi âm tủ"><label>Hút mùi âm tủ</label></div>
+                        <div class="option-item"><input type="checkbox" name="kitchen[]" value="Máy rửa bát"><label>Máy
+                                rửa bát</label></div>
+                        <div class="option-item"><input type="checkbox" name="kitchen[]" value="Máy sấy bát"><label>Máy
+                                sấy bát</label></div>
+                        <div class="option-item"><input type="checkbox" name="kitchen[]" value="Tủ rượu"><label>Tủ
+                                rượu</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>15. Hướng bếp lửa (nấu)</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="radio" name="kitchen_fire_dir"
+                                value="Bắc"><label>Bắc</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_fire_dir"
+                                value="Nam"><label>Nam</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_fire_dir"
+                                value="Đông"><label>Đông</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_fire_dir"
+                                value="Tây"><label>Tây</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_fire_dir"
+                                value="Đông Bắc"><label>Đông Bắc</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_fire_dir"
+                                value="Đông Nam"><label>Đông Nam</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_fire_dir" value="Tây Bắc"><label>Tây
+                                Bắc</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_fire_dir" value="Tây Nam"><label>Tây
+                                Nam</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>16. Hướng chậu rửa (nước)</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="radio" name="kitchen_water_dir"
+                                value="Bắc"><label>Bắc</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_water_dir"
+                                value="Nam"><label>Nam</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_water_dir"
+                                value="Đông"><label>Đông</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_water_dir"
+                                value="Tây"><label>Tây</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_water_dir"
+                                value="Đông Bắc"><label>Đông Bắc</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_water_dir"
+                                value="Đông Nam"><label>Đông Nam</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_water_dir" value="Tây Bắc"><label>Tây
+                                Bắc</label></div>
+                        <div class="option-item"><input type="radio" name="kitchen_water_dir" value="Tây Nam"><label>Tây
+                                Nam</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>17. Nhu cầu ở phòng ăn</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="checkbox" name="dining_needs[]"
+                                value="Bàn ăn 4 người"><label>Bàn ăn 4 người</label></div>
+                        <div class="option-item"><input type="checkbox" name="dining_needs[]"
+                                value="Bàn ăn 6 người"><label>Bàn ăn 6 người</label></div>
+                        <div class="option-item"><input type="checkbox" name="dining_needs[]"
+                                value="Bàn ăn 8 người"><label>Bàn ăn 8 người</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>18. Nhu cầu ở phòng ngủ chính</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="checkbox" name="master_bedroom[]"
+                                value="Giường 1.6x2m"><label>Giường 1.6x2m</label></div>
+                        <div class="option-item"><input type="checkbox" name="master_bedroom[]"
+                                value="Giường 1.8x2m"><label>Giường 1.8x2m</label></div>
+                        <div class="option-item"><input type="checkbox" name="master_bedroom[]"
+                                value="Bàn trang điểm"><label>Bàn trang điểm</label></div>
+                        <div class="option-item"><input type="checkbox" name="master_bedroom[]"
+                                value="Bàn làm việc"><label>Bàn làm việc</label></div>
+                        <div class="option-item"><input type="checkbox" name="master_bedroom[]"
+                                value="Xem tivi"><label>Xem tivi</label></div>
+                        <div class="option-item"><input type="checkbox" name="master_bedroom[]"
+                                value="Tủ quần áo"><label>Tủ quần áo</label></div>
+                        <div class="option-item"><input type="checkbox" name="master_bedroom[]"
+                                value="Phòng thay đồ"><label>Walk-in closet</label></div>
+                        <div class="option-item"><input type="checkbox" name="master_bedroom[]"
+                                value="Phòng tắm riêng"><label>Ensuite bathroom</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="master_bed_dir">19. Hướng đầu giường phòng ngủ chính</label>
+                    <input type="text" id="master_bed_dir" name="master_bed_dir" placeholder="Ví dụ: Đông Nam">
+                </div>
+
+                <div class="form-group">
+                    <label>20. Nhu cầu ở phòng ngủ nhỏ/trẻ/người già</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="checkbox" name="small_bedroom[]"
+                                value="Giường tầng"><label>Giường tầng</label></div>
+                        <div class="option-item"><input type="checkbox" name="small_bedroom[]"
+                                value="Giường 0.9x2m"><label>Giường 0.9x2m</label></div>
+                        <div class="option-item"><input type="checkbox" name="small_bedroom[]"
+                                value="Giường 1.2x2m"><label>Giường 1.2x2m</label></div>
+                        <div class="option-item"><input type="checkbox" name="small_bedroom[]"
+                                value="Giường 1.6x2m"><label>Giường 1.6x2m</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>22. Hướng bàn thờ (nếu có)</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="radio" name="altar_dir" value="Bắc"><label>Bắc</label>
+                        </div>
+                        <div class="option-item"><input type="radio" name="altar_dir" value="Nam"><label>Nam</label>
+                        </div>
+                        <div class="option-item"><input type="radio" name="altar_dir" value="Đông"><label>Đông</label>
+                        </div>
+                        <div class="option-item"><input type="radio" name="altar_dir" value="Tây"><label>Tây</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>23. Sân vườn (nếu có)</label>
+                    <div class="options-grid">
+                        <div class="option-item"><input type="checkbox" name="garden[]" value="Lối đi đá/cây"><label>Lối
+                                đi tự nhiên</label></div>
+                        <div class="option-item"><input type="checkbox" name="garden[]" value="Lối đi gạch"><label>Lối
+                                đi gạch</label></div>
+                        <div class="option-item"><input type="checkbox" name="garden[]" value="Bể cá cảnh"><label>Bể cá
+                                cảnh</label></div>
+                        <div class="option-item"><input type="checkbox" name="garden[]" value="Bể nước tràn"><label>Bể
+                                tràn resort</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="other_spaces">24. Nhu cầu ở những không gian khác</label>
+                    <textarea id="other_spaces" name="other_spaces"
+                        placeholder="Ví dụ: Phòng gym, kho, hầm rượu..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="old_furniture">25. Đồ đạc cũ nào bạn sẽ đem đến nhà mới? *</label>
+                    <textarea id="old_furniture" name="old_furniture"
+                        placeholder="Kê khai các món đồ bạn muốn giữ lại..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">26. Ngân sách đầu tư dự kiến? *</label>
+                    <span class="description">Hãy cho chúng tôi biết con số gần đúng bạn dự định dành cho sự thay đổi
+                        này.</span>
+                    <input type="text" id="budget" name="budget" placeholder="Ví dụ: 500tr - 1 tỷ" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="custom_notes">27. Diễn đạt lại mong muốn của bạn bằng ngôn từ riêng?</label>
+                    <textarea id="custom_notes" name="custom_notes"
+                        placeholder="Ước mơ về không gian sống của bạn là..."></textarea>
+                </div>
+            </section>
+
+            <button type="submit" class="btn-submit">GỬI YÊU CẦU THIẾT KẾ</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="company-info">
+                <p>&copy; 2026 N&M STUDIO - ARCHITECTURE & INTERIOR DESIGN</p>
+                <p>Website: <a href="https://www.nmstudio.id.vn/" target="_blank">www.nmstudio.id.vn</a></p>
+            </div>
+            <p>Email: saomaiid@gmail.com | nghiavu2011@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="brief-script.js"></script>
+</body>
+
+</html>
