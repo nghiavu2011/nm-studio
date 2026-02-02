@@ -93,19 +93,33 @@ const Admin = () => {
         if (!e.target.files) return;
         setUploading(true);
         const files = Array.from(e.target.files);
+        const cloudName = "dwupjsbf0";
+        const uploadPreset = "nmstudio_upload";
 
         try {
             const uploadPromises = files.map(async (file: File) => {
-                const fileRef = ref(storage, `uploads/${Date.now()}_${file.name}`);
-                await uploadBytes(fileRef, file);
-                return await getDownloadURL(fileRef);
+                const formData = new FormData();
+                formData.append("file", file);
+                formData.append("upload_preset", uploadPreset);
+
+                const response = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+                    method: "POST",
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error?.message || "Upload failed");
+                }
+                const data = await response.json();
+                return data.secure_url;
             });
 
             const urls = await Promise.all(uploadPromises);
             setFormData(prev => ({ ...prev, gallery: [...prev.gallery, ...urls] }));
         } catch (error) {
             console.error("Upload failed", error);
-            alert("Upload failed. Check console.");
+            alert("Upload failed. Check console for details.");
         } finally {
             setUploading(false);
         }
@@ -134,7 +148,7 @@ const Admin = () => {
                 <div className="bg-white p-10 rounded-xl shadow-2xl w-full max-w-md border-t-8 border-brand-primary animate-fadeIn">
                     <div className="text-center mb-10">
                         <h2 className="text-3xl font-heading font-black text-brand-secondary uppercase tracking-tighter">HỆ THỐNG QUẢN TRỊ</h2>
-                        <p className="text-[10px] text-brand-primary font-bold mt-1">BUILD V2.1 - API FIX</p>
+                        <p className="text-[10px] text-brand-primary font-bold mt-1">BUILD V3.0 - CLOUDINARY</p>
                         <p className="text-xs text-gray-400 mt-2 font-bold uppercase tracking-widest">N&M Studio Control Panel</p>
                     </div>
                     {error && <p className="bg-red-50 text-red-500 text-xs p-3 rounded mb-6 border border-red-100 font-medium">{error}</p>}
