@@ -134,6 +134,7 @@ const Admin = () => {
                 <div className="bg-white p-10 rounded-xl shadow-2xl w-full max-w-md border-t-8 border-brand-primary animate-fadeIn">
                     <div className="text-center mb-10">
                         <h2 className="text-3xl font-heading font-black text-brand-secondary uppercase tracking-tighter">HỆ THỐNG QUẢN TRỊ</h2>
+                        <p className="text-[10px] text-brand-primary font-bold mt-1">BUILD V2.1 - API FIX</p>
                         <p className="text-xs text-gray-400 mt-2 font-bold uppercase tracking-widest">N&M Studio Control Panel</p>
                     </div>
                     {error && <p className="bg-red-50 text-red-500 text-xs p-3 rounded mb-6 border border-red-100 font-medium">{error}</p>}
