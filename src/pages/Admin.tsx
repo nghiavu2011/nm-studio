@@ -81,9 +81,9 @@ const Admin = () => {
             });
             setIsEditing(false);
             fetchPosts();
-        } catch (e) {
+        } catch (e: any) {
             console.error("Error adding document: ", e);
-            alert("Error saving post");
+            alert(`Error saving post: ${e.message}\n(Check your Firestore Rules!)`);
         } finally {
             setUploading(false);
         }
@@ -251,6 +251,7 @@ const Admin = () => {
                                             <div key={idx} className="relative group aspect-square">
                                                 <img src={url} className="w-full h-full object-cover rounded shadow-sm" alt="Preview" />
                                                 <button type="button" onClick={() => removeImage(idx)} className="absolute top-1 right-1 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition"><X className="w-3 h-3" /></button>
+                                                <button type="button" onClick={() => { navigator.clipboard.writeText(url); alert("Image URL Copied!"); }} className="absolute bottom-1 right-1 bg-blue-500 text-white rounded px-2 py-1 text-[8px] opacity-0 group-hover:opacity-100 transition uppercase font-bold shadow-sm">COPY URL</button>
                                             </div>
                                         ))}
                                     </div>
