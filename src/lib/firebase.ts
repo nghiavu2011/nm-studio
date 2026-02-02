@@ -4,10 +4,10 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 // Configuration for project: nmstudio-b4105
-// !IMPORTANT: You must replace "YOUR_API_KEY_HERE" with the actual Web API Key from Firebase Console
+// !IMPORTANT: You must replace "AIzaSyANDicHlWH5ODqa2XRb1-Ypq3sBrYb6oBY" with the actual Web API Key from Firebase Console
 // Go to Project Settings -> General -> Your apps -> SDK Setup and Configuration
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY_HERE", // <--- PASTE YOUR API KEY HERE
+    apiKey: "YAIzaSyANDicHlWH5ODqa2XRb1-Ypq3sBrYb6oBY", // <--- PASTE YOUR API KEY HERE
     authDomain: "nmstudio-b4105.firebaseapp.com",
     projectId: "nmstudio-b4105",
     storageBucket: "nmstudio-b4105.firebasestorage.app",
