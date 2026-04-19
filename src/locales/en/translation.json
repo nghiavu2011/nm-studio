@@ -1,0 +1,66 @@
+{
+  "header": {
+    "projects": "PROJECTS",
+    "services": "SERVICES",
+    "handbook": "HANDBOOK",
+    "contact": "CONTACT",
+    "briefButton": "START DESIGN BRIEF"
+  },
+  "home": {
+    "heroTitle": "Where Architecture Intersects Technology",
+    "heroDesc": "Specializing in High-End Interior Design, Architecture & Visual Conceptualization through the lens of Artificial Intelligence. We don't just design spaces; we shape the future of living.",
+    "scrollDown": "SCROLL EXPLORE",
+    "aiTitle": "Unleash Imagination with AI",
+    "aiDesc": "Witness raw structural sketches meticulously transform into hyper-realistic architectural visualizations, powered entirely by N&M's exclusive graphical cognitive pipeline.",
+    "before": "Form / Concept",
+    "after": "AI Visualization",
+    "stats": {
+      "projectsTitle": "Completed Projects",
+      "projectsDesc": "Premium Finished Spaces",
+      "rendersTitle": "Visual Renders",
+      "rendersDesc": "Generated via AI",
+      "awardsTitle": "Design Awards",
+      "awardsDesc": "Creative Accolades"
+    },
+    "philosophyTitle": "Curated Philosophy",
+    "philosophySub": "Every curve and angle is a precise orchestration of aesthetics and pure feasibility.",
+    "projectsTitle": "Featured Archives",
+    "viewAllBtn": "VIEW ALL PROJECTS",
+    "servicesTitle": "Bespoke Services",
+    "workflowTitle": "Methodological Workflow",
+    "designBriefTitle": "The Perfect Foundation",
+    "designBriefDesc": "The genesis of an extraordinary luxury concept always stems from a meticulously detailed brief. Let us decipher your habits, your lifestyle, and your utmost aspirations.",
+    "startNowBtn": "BEGIN YOUR JOURNEY",
+    "contactTitle": "Initiate Vision"
+  },
+  "brief": {
+    "step1": "General Details",
+    "step2": "Aesthetic Preferences",
+    "step3": "Budget Formulation",
+    "step4": "Finalization",
+    "title1": "Greetings! Let's Begin.",
+    "desc1": "Provide N&M Studio with the fundamental specifics of yourself and the intended space.",
+    "name": "Your Full Name",
+    "phone": "Contact Number",
+    "area": "Total Area / Scale (sqm)",
+    "title2": "Which style resonates with you?",
+    "desc2": "This selection guides our AI in curating the most precise aesthetic blueprint.",
+    "title3": "Budget Scope & Specifics",
+    "desc3": "Enabling us to optimize the most premium material palette for your investment.",
+    "budget": "Estimated Budget Range",
+    "notes": "Any bespoke desires or unique functional demands?",
+    "title4": "Almost There!",
+    "desc4": "Are you prepared to transmit the vision of your future sanctuary to our experts?",
+    "submitBtn": "SUBMIT BRIEF",
+    "successTitle": "Flawless Submission!",
+    "successDesc": "N&M Studio has received your dossier. Our elite Architects and AI Specialists will decode the parameters and reach out within 24 hours.",
+    "backBtn": "GO BACK",
+    "nextBtn": "PROCEED"
+  },
+  "footer": {
+    "desc": "The Vanguard of Interior Design, Architecture & AI Visualization.",
+    "quickLinks": "Quick Navigation",
+    "contact": "Contact Protocol",
+    "rights": "All rights reserved. N&M Studio."
+  }
+}

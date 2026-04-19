@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import App from './src/App';
 import './src/index.css';
+import './src/i18n';
 
 const root = createRoot(document.getElementById('root')!);
 root.render(

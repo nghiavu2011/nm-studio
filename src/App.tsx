@@ -9,8 +9,10 @@ import Handbook from './pages/Handbook';
 import Contact from './pages/Contact';
 import ProjectDetail from './pages/ProjectDetail';
 import Admin from './pages/Admin';
+import BriefWizard from './components/BriefWizard';
 import { DEFAULT_CONTENT } from './constants';
 import { useLocation } from 'react-router-dom';
+import Lenis from 'lenis';
 
 const App = () => {
     const location = useLocation();
@@ -20,6 +22,29 @@ const App = () => {
     useEffect(() => {
         console.log("Current Path:", location.pathname);
     }, [location]);
+
+    useEffect(() => {
+        // Initialize Lenis for smooth scroll
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
+            orientation: 'vertical',
+            gestureOrientation: 'vertical',
+            smoothWheel: true,
+            touchMultiplier: 2,
+        });
+
+        function raf(time: number) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+        return () => {
+            lenis.destroy();
+        };
+    }, []);
 
     useEffect(() => {
         fetch('/content.json')
@@ -53,6 +78,7 @@ const App = () => {
                 <Route path="/handbook" element={<Handbook />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/project/:id" element={<ProjectDetail projects={content.projects || []} />} />
+                <Route path="/brief" element={<BriefWizard />} />
                 <Route path="/" element={<Home content={content} />} />
             </Routes>
             <Footer />

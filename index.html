@@ -4,23 +4,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Architecture Agency Blueprint</title>
-  <!-- Fonts: Montserrat for Headings, Inter for Body -->
+  <!-- SEO Meta Tags -->
+  <title>N&M Studio | Thiết kế Kiến trúc, Nội thất & Diễn họa AI</title>
+  <meta name="description" content="N&M Studio cung cấp giải pháp không gian toàn diện: từ Thiết kế, Thi công kiến trúc - nội thất đến Diễn họa CGI và Sáng tạo ý tưởng bằng công nghệ AI đỉnh cao." />
+  <meta name="keywords" content="N&M Studio, thiết kế nội thất, thiết kế kiến trúc, thi công trọn gói, diễn họa AI, CGI" />
+  <meta name="author" content="N&M Studio" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="N&M Studio | Nơi Kiến trúc Giao thoa Công nghệ" />
+  <meta property="og:description" content="Khám phá không gian tổ ấm tương lai với dịch vụ thi công nội thất và phác thảo ý tưởng bằng AI." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=1200" />
+  <meta property="og:url" content="https://www.nmstudio.id.vn/" />
+  
+  <!-- Fonts: Cormorant Garamond for Headings, Inter for Body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS -->
+  <!-- Tailwind CSS via CDN for development (Recommendation: Install via PostCSS for prod) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
-            heading: ['Montserrat', 'sans-serif'],
+            heading: ['Cormorant Garamond', 'serif'],
           },
           colors: {
             brand: {
@@ -39,33 +50,23 @@
       font-family: 'Inter', sans-serif;
       color: #333;
     }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: 'Montserrat', sans-serif;
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Cormorant Garamond', serif;
     }
-
     .scrollbar-hide::-webkit-scrollbar {
       display: none;
     }
-
     .scrollbar-hide {
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
   </style>
 
-
-  <script type="module" crossorigin src="/assets/index-DRrS1RFt.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-tOE8oX-2.css">
 </head>
 
 <body>
   <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 
 </html>

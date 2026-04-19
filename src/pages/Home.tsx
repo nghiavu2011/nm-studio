@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Coins, Plus } from 'lucide-react';
+import { Coins, Plus, Wand2 } from 'lucide-react';
 import { collection, getDocs } from 'firebase/firestore';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { db } from '../lib/firebase';
 import HeroCarousel from '../components/HeroCarousel';
 import Counter from '../components/Counter';
+import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import { PROCESS_DATA, SERVICES_BRIEF } from '../constants';
 
 interface HomeProps {
@@ -15,6 +18,7 @@ const Home = ({ content }: HomeProps) => {
     const navigate = useNavigate();
     const location = useLocation();
     const projectsRef = useRef<HTMLDivElement>(null);
+    const { t } = useTranslation();
 
     const [activeProcessTab, setActiveProcessTab] = useState<keyof typeof PROCESS_DATA>('arch');
     const [activeProjectCategory, setActiveProjectCategory] = useState('all');
@@ -46,8 +50,6 @@ const Home = ({ content }: HomeProps) => {
             setTimeout(() => {
                 projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
             }, 100);
-            // Optional: Clear state so it doesn't scroll on refresh?
-            // window.history.replaceState({}, ''); 
         }
     }, [location]);
 
@@ -57,31 +59,47 @@ const Home = ({ content }: HomeProps) => {
 
     const visibleProjects = showAllProjects ? filteredProjects : filteredProjects.slice(0, 3);
 
-    const activeHeader = (project_categories || []).find((c: any) => c.id === activeProjectCategory)?.header || 'TẤT CẢ DỰ ÁN';
+    const activeHeader = (project_categories || []).find((c: any) => c.id === activeProjectCategory)?.header || t('home.projectsTitle');
 
     return (
         <>
             <section className="relative h-screen flex items-center justify-center text-white overflow-hidden">
                 <HeroCarousel heroImages={hero_images} />
                 <div className="relative z-10 text-center px-6 max-w-4xl">
-                    <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 leading-tight">
-                        Giải pháp không gian từ ý tưởng đến hoàn thiện
-                    </h1>
-                    <p className="text-sm md:text-base text-gray-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-                        Thiết kế, thi công, diễn hoạ và sáng tạo bằng AI
-                    </p>
-                    <div className="flex flex-col md:flex-row gap-4 justify-center">
-                        <a href="#projects" onClick={(e) => { e.preventDefault(); projectsRef.current?.scrollIntoView({ behavior: 'smooth' }); }} className="bg-brand-primary py-4 px-10 font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">XEM CÔNG TRÌNH THỰC TẾ</a>
-                    </div>
+                    <motion.h1 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="text-5xl md:text-7xl font-heading font-bold mb-4 leading-tight drop-shadow-lg"
+                    >
+                        {t('home.heroTitle').split('\\n').map((line: string, i: number) => <React.Fragment key={i}>{line}<br/></React.Fragment>)}
+                    </motion.h1>
+                    <motion.p 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 }}
+                        className="text-sm md:text-lg text-gray-100 mb-10 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md"
+                    >
+                        {t('home.heroDesc')}
+                    </motion.p>
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4 }}
+                        className="flex flex-col md:flex-row gap-4 justify-center"
+                    >
+                        <a href="#projects" onClick={(e) => { e.preventDefault(); projectsRef.current?.scrollIntoView({ behavior: 'smooth' }); }} className="bg-brand-primary py-4 px-10 font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all shadow-xl">
+                            {t('home.viewAllBtn')}
+                        </a>
+                    </motion.div>
                 </div>
             </section>
 
             <section className="bg-white py-20 border-b border-gray-100">
                 <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center relative">
                     {[
-                        { v: 15, l: 'NĂM KINH NGHIỆM' },
-                        { v: 250, l: 'CÔNG TRÌNH HOÀN THIỆN' },
-                        { v: 10, l: 'TỈNH THÀNH / QUỐC GIA' }
+                        { v: 15, l: t('home.stats.projectsTitle') },
+                        { v: 250, l: t('home.stats.rendersTitle') },
+                        { v: 10, l: t('home.stats.awardsTitle') }
                     ].map((s, i) => (
                         <div key={i} className="group cursor-default flex flex-col items-center">
                             <Counter target={s.v} />
@@ -91,12 +109,53 @@ const Home = ({ content }: HomeProps) => {
                 </div>
             </section>
 
+            {/* AI Slider Section */}
+            <section className="bg-[#111] text-white py-24 overflow-hidden relative">
+                <div className="container mx-auto px-6">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-16"
+                    >
+                        <h4 className="text-brand-primary font-bold text-xs uppercase tracking-[0.3em] mb-4 flex items-center justify-center gap-2">
+                            <Wand2 className="w-4 h-4" /> AI CONCEPT ENGINE
+                        </h4>
+                        <h2 className="text-3xl md:text-5xl font-heading font-bold uppercase tracking-widest text-white">{t('home.aiTitle')}</h2>
+                        <div className="w-20 h-1 bg-brand-primary mx-auto mt-6 mb-6"></div>
+                        <p className="max-w-2xl mx-auto text-gray-400 font-light leading-relaxed">
+                            {t('home.aiDesc')}
+                        </p>
+                    </motion.div>
+                    
+                    <motion.div 
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                        className="max-w-5xl mx-auto"
+                    >
+                        <BeforeAfterSlider 
+                            beforeImage="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?q=80&w=1200&auto=format&fit=crop" 
+                            afterImage="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop" 
+                            beforeLabel={t('home.before')}
+                            afterLabel={t('home.after')}
+                        />
+                    </motion.div>
+                </div>
+            </section>
+
             <section id="services" className="py-24 bg-white border-b border-gray-50 overflow-hidden">
                 <div className="container mx-auto px-6">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-heading font-bold uppercase tracking-widest">DỊCH VỤ CUNG CẤP</h2>
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-16"
+                    >
+                        <h2 className="text-3xl md:text-4xl font-heading font-bold uppercase tracking-widest">{t('home.servicesTitle')}</h2>
                         <div className="w-20 h-1 bg-brand-primary mx-auto mt-6"></div>
-                    </div>
+                    </motion.div>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                         {SERVICES_BRIEF.map((s, i) => (
                             <div key={i} onClick={() => navigate('/services')} className="group relative overflow-hidden h-[350px] cursor-pointer shadow-lg rounded-sm">
@@ -113,6 +172,9 @@ const Home = ({ content }: HomeProps) => {
 
             <section className="py-16 bg-[#e0ddd2] text-gray-900 overflow-hidden">
                 <div className="container mx-auto px-6">
+                    <div className="text-center mb-12 animate-fadeIn">
+                        <h2 className="text-2xl font-heading font-bold uppercase tracking-widest">{t('home.workflowTitle')}</h2>
+                    </div>
                     <div className="flex justify-center mb-16 overflow-x-auto scrollbar-hide pb-4">
                         <div className="inline-flex bg-white/50 p-1 rounded-sm border border-black/5 whitespace-nowrap shadow-sm">
                             {Object.keys(PROCESS_DATA).map((key) => (
@@ -136,7 +198,7 @@ const Home = ({ content }: HomeProps) => {
                                         {stage.pay && (
                                             <div className="mt-auto flex items-center gap-2 bg-brand-primary/10 py-2 px-4 rounded-sm border border-brand-primary/10 w-fit">
                                                 <Coins className="w-3 h-3 text-brand-primary" />
-                                                <span className="text-[9px] font-bold text-brand-primary uppercase tracking-widest leading-none">THỐNG TOÁN: {stage.pay.replace('💰', '').trim()}</span>
+                                                <span className="text-[9px] font-bold text-brand-primary uppercase tracking-widest leading-none">{stage.pay}</span>
                                             </div>
                                         )}
                                     </div>
@@ -151,7 +213,7 @@ const Home = ({ content }: HomeProps) => {
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                         <div className="w-full md:w-1/2">
-                            <h4 className="text-brand-primary font-bold text-xs uppercase tracking-[0.3em] mb-4 uppercase">DỰ ÁN</h4>
+                            <h4 className="text-brand-primary font-bold text-xs uppercase tracking-[0.3em] mb-4 uppercase">{t('home.projectsTitle')}</h4>
                             <h2 className="text-4xl font-heading font-bold uppercase tracking-widest transition-all animate-fadeIn">{activeHeader}</h2>
                         </div>
                         <div className="w-full md:w-1/2 flex justify-end">
@@ -193,7 +255,7 @@ const Home = ({ content }: HomeProps) => {
                                 onClick={() => setShowAllProjects(true)}
                                 className="border-2 border-[#705d3f] text-[#705d3f] px-12 py-4 text-[12px] font-bold uppercase tracking-[0.3em] hover:bg-[#705d3f] hover:text-white transition-all rounded-sm shadow-md flex items-center gap-4 group"
                             >
-                                TẢI THÊM <Plus className="w-4 h-4 group-hover:rotate-90 transition-transform" />
+                                {t('home.viewAllBtn')} <Plus className="w-4 h-4 group-hover:rotate-90 transition-transform" />
                             </button>
                         </div>
                     )}

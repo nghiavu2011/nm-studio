@@ -1,0 +1,66 @@
+{
+  "header": {
+    "projects": "DỰ ÁN",
+    "services": "DỊCH VỤ",
+    "handbook": "CẨM NANG",
+    "contact": "LIÊN HỆ",
+    "briefButton": "BẮT ĐẦU BRIEF DESIGN"
+  },
+  "home": {
+    "heroTitle": "Nơi Kiến Trúc Giao Thoa Công Nghệ",
+    "heroDesc": "Chuyên sâu vào Thiết kế Nội thất, Kiến trúc & Tư duy Trực quan qua lăng kính Trí tuệ Nhân tạo. N&M Studio – Nơi không gian sống của bạn được định hình bằng cả nghệ thuật và công nghệ của tương lai.",
+    "scrollDown": "CUỘN XUỐNG",
+    "aiTitle": "Khai Phóng Ý Tưởng Cùng Ý Tưởng AI",
+    "aiDesc": "Tận mắt chứng kiến các bản phác thảo thô sơ ngay lập tức trở thành bản diễn hoạ đỉnh cao cực kỳ sống động chỉ với quy trình tư duy đồ hoạ độc quyền của N&M.",
+    "before": "Phác thảo / Ý tưởng",
+    "after": "Diễn hoạ AI",
+    "stats": {
+      "projectsTitle": "Dự án Thiết Kế",
+      "projectsDesc": "Hoàn thiện cao cấp",
+      "rendersTitle": "Bản Diễn Họa",
+      "rendersDesc": "Phát triển qua AI",
+      "awardsTitle": "Giải Thưởng",
+      "awardsDesc": "Thiết kế Sáng tạo"
+    },
+    "philosophyTitle": "Triết Lý Sáng Tạo",
+    "philosophySub": "Mỗi đường nét đều là sự đo lường chi tiết giữa thẩm mỹ và tính khả thi",
+    "projectsTitle": "Dự án Nổi bật",
+    "viewAllBtn": "Xem Toàn Bộ Dự Án",
+    "servicesTitle": "Dịch Vụ Đo Ni Đóng Giày",
+    "workflowTitle": "Quy Trình Chặt Chẽ",
+    "designBriefTitle": "Bản Brief Thiết Kế Hoàn Hảo",
+    "designBriefDesc": "Sự khởi đầu của thiết kế đỉnh cao luôn bắt nguồn từ một bản mô tả cá nhân hóa hoàn chỉnh. Hãy để chúng tôi hiểu thói quen, phong cách sống và mơ ước của bạn.",
+    "startNowBtn": "BẮT ĐẦU NGAY",
+    "contactTitle": "Kết Nối Lên Ý Tưởng"
+  },
+  "brief": {
+    "step1": "Thông tin cơ bản",
+    "step2": "Phong cách",
+    "step3": "Ngân sách",
+    "step4": "Hoàn tất",
+    "title1": "Chào bạn! Chúng ta bắt đầu nhé.",
+    "desc1": "Hãy cho N&M Studio biết một vài thông tin cơ bản về bạn và dự án.",
+    "name": "Tên của bạn",
+    "phone": "Số điện thoại",
+    "area": "Diện tích đất / nhà (m2)",
+    "title2": "Đâu là phong cách bạn yêu thích?",
+    "desc2": "Sự lựa chọn này giúp AI của chúng tôi gợi ý ý tưởng chính xác hơn.",
+    "title3": "Ngân sách dự kiến & Ghi chú",
+    "desc3": "Giúp chúng tôi tối ưu vật liệu và giải pháp thiết kế cho bạn.",
+    "budget": "Ngân sách dự kiến",
+    "notes": "Bạn có mong muốn đặc biệt nào không?",
+    "title4": "Gần xong rồi!",
+    "desc4": "Bạn đã sẵn sàng gửi đi những mong ước cho tổ ấm của mình chưa?",
+    "submitBtn": "GỬI YÊU CẦU",
+    "successTitle": "Hoàn tất xuất sắc!",
+    "successDesc": "N&M Studio đã nhận được thông tin. Đội ngũ Kiến trúc sư và AI của chúng tôi sẽ phân tích và liên hệ lại với bạn trong vòng 24H.",
+    "backBtn": "QUAY LẠI",
+    "nextBtn": "TIẾP TỤC"
+  },
+  "footer": {
+    "desc": "Studio Thiết kế Nội thất, Kiến trúc & AI hàng đầu.",
+    "quickLinks": "Liên Kết Nhanh",
+    "contact": "Liên Hệ",
+    "rights": "Bản quyền thuộc về N&M Studio."
+  }
+}
