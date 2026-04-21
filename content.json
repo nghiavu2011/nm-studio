@@ -25,33 +25,9 @@
         {
             "id": 1,
             "title": "Indochine Apartment",
-            "location": "Hà Nội",
-            "year": "2024",
-            "category": "interior",
-            "type": "Thi công",
-            "style": "Indochine",
-            "floors": "1 Tầng",
-            "area": "85m2",
+            "location": "Hà Nội", "year": "2024", "category": "interior", "type": "Thi công", "style": "Indochine", "floors": "1 Tầng", "area": "85m2",
             "description": "Căn hộ phong cách Indochine với sự kết hợp tinh tế giữa nét hoài cổ và hiện đại.",
-            "gallery": [
-                "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1200",
-                "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200"
-            ]
-        },
-        {
-            "id": 2,
-            "title": "L's Townhouse",
-            "location": "Hà Nội",
-            "year": "2023",
-            "category": "arch",
-            "type": "Thiết kế",
-            "style": "Hiện đại",
-            "floors": "3 Tầng",
-            "area": "6x18m",
-            "description": "Nhà phố hiện đại tối ưu không gian và ánh sáng tự nhiên.",
-            "gallery": [
-                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200"
-            ]
+            "gallery": ["https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1200"]
         }
     ],
     "services": [
@@ -74,7 +50,7 @@
             "excerpt_vi": "Kinh nghiệm thực tế để bảo vệ túi tiền và quyền lợi của chủ đầu tư trước những điều khoản mập mờ.",
             "excerpt_en": "Defending your investment against ambiguous clauses with professional legal insights.",
             "content_vi": "### Câu chuyện xương máu\nHơn 10 năm làm nghề, chúng tôi chứng kiến không ít chủ nhà phải \"ngậm đắng nuốt cay\" vì tin vào những bản hợp đồng mẫu sơ sài. Một bản hợp đồng lỏng lẻo không chỉ gây thiệt hại về tiền bạc mà còn phá hỏng hoàn toàn trải nghiệm xây dựng tổ ấm của bạn.\n\n[IMG:https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200|Ký kết hợp đồng là bước quan trọng nhất bảo vệ quyền lợi chủ đầu tư]\n\n### Bẫy số 1: Cụm từ \"Vật liệu tương đương\"\nĐây là cụm từ nguy hiểm nhất. Thế nào là tương đương? Nếu không có mã màu, hãng sản xuất và thông số kỹ thuật (Spec) chi tiết, nhà thầu có thể đưa vào những vật liệu rẻ tiền hơn nhưng có ngoại hình giống 80%.\n\n**Lời khuyên: Phụ lục vật liệu phải chi tiết đến từng thương hiệu, mã sản phẩm và đơn giá tại thời điểm ký kết.**",
-            "content_en": "### The Painful Reality\nIn over a decade of practice, we've seen homeowners suffer because of poorly drafted contracts."
+            "content_en": "Defending your investment against ambiguous clauses."
         },
         {
             "id": "kitchen-ergonomics",
@@ -86,8 +62,8 @@
             "title_en": "The Golden Triangle: Fridge - Sink - Stove. Secrets of a 5-Star Kitchen",
             "excerpt_vi": "Quy tắc nhân trắc học giúp tối ưu hóa luồng di chuyển, xóa tan mệt mỏi khi nấu nướng.",
             "excerpt_en": "Ergonomic rules for optimized movement flows in your kitchen.",
-            "content_vi": "### Tại sao bạn mệt mỏi khi vào bếp?\nHầu hết lỗi thiết kế bếp đến từ việc đặt sai vị trí các thiết bị chính. Bạn phải đi bộ quá nhiều giữa việc lấy đồ ăn - rửa rau - và đứng bếp nấu.\n\n[IMG:https://images.unsplash.com/photo-1556912173-3bb406ef7e77?q=80&w=1200|Căn bếp hiện đại cần ưu tiên sự luân chuyển hợp lý của 3 điểm chính]\n\n### Quy tắc Tam Giác Vàng (Work Triangle)\nĐây là tam giác được tạo bởi 3 điểm: Tủ lạnh (Lưu trữ) - Chậu rửa (Sơ chế) - Bếp nấu (Chế biến). \n\n- **Khoảng cách lý tưởng:** Tổng 3 cạnh tam giác phải nằm trong khoảng 4m đến 8m.\n- **Khoảng cách mỗi cạnh:** Không được ngắn hơn 1.2m và không được dài hơn 2.7m.\n\n[IMG:https://images.unsplash.com/photo-1565182999561-18d7dc63c393?q=80&w=1200|Bố trí bếp hình chữ L hoặc chữ U giúp tối ưu tam giác vàng nhất]\n\n### Chiều cao bếp chuẩn Việt Nam\nChiều cao bếp dưới lý tưởng là 81cm - 86cm để tránh đau lưng khi đứng nấu lâu.",
-            "content_en": "### Why Are You Exhausted in the Kitchen?\nMost kitchen design failures stem from improper appliance placement."
+            "content_vi": "### Tại sao bạn mệt mỏi khi vào bếp?\nHầu hết lỗi thiết kế bếp đến từ việc đặt sai vị trí các thiết bị chính. Bạn phải đi bộ quá nhiều giữa việc lấy đồ ăn - rửa rau - và đứng bếp nấu.\n\n[IMG:https://images.unsplash.com/photo-1556911220-e15595b6a981?q=80&w=1200|Căn bếp hiện đại cần ưu tiên sự luân chuyển hợp lý của 3 điểm chính]\n\n### Quy tắc Tam Giác Vàng (Work Triangle)\nĐây là tam giác được tạo bởi 3 điểm: Tủ lạnh (Lưu trữ) - Chậu rửa (Sơ chế) - Bếp nấu (Chế biến). \n\n- **Khoảng cách lý tưởng:** Tổng 3 cạnh tam giác phải nằm trong khoảng 4m đến 8m.\n- **Khoảng cách mỗi cạnh:** Không được ngắn hơn 1.2m và không được dài hơn 2.7m.\n\n[IMG:https://images.unsplash.com/photo-1565182999561-18d7dc63c393?q=80&w=1200|Bố trí bếp hình chữ L hoặc chữ U giúp tối ưu tam giác vàng nhất]\n\n### Chiều cao bếp chuẩn Việt Nam\nChiều cao bếp dưới lý tưởng là 81cm - 86cm để tránh đau lưng khi đứng nấu lâu.",
+            "content_en": "Ergonomic rules for optimized movement flows in your kitchen."
         },
         {
             "id": "construction-budget",
@@ -96,11 +72,11 @@
             "thumbnail": "https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=1200&auto=format&fit=crop",
             "featured": true,
             "title_vi": "Tại sao xây nhà luôn phát sinh 20%? Cách NM Studio kiểm soát dưới 5%",
-            "title_en": "Why Construction Always Overruns by 20%? How We Control It Under 5%",
+            "title_en": "Why Construction Always Overruns by 20%?",
             "excerpt_vi": "Phân tích hố đen tài chính và quy trình dự toán chuẩn công nghiệp.",
-            "excerpt_en": "Analyzing the financial black hole in construction and estimation workflows.",
-            "content_vi": "### Hố đen của sự \"Tùy hứng\"\nLý do lớn nhất khiến chi phí đội lên là việc đổi ý giữa chừng. \n\n[IMG:https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=1200|Sự chuẩn bị kỹ lưỡng giúp tiết kiệm hàng trăm triệu đồng]\n\n### Quy trình BIM tại NM Studio\nChúng tôi đếm chính xác từng mét dây điện trước khi thi công.",
-            "content_en": "### The Black Hole of Spontaneity\nThe primary reason for cost overruns is mid-project changes."
+            "excerpt_en": "Analyzing the financial black hole in construction.",
+            "content_vi": "### Quy trình BIM tại NM Studio\nChúng tôi đếm chính xác từng mét dây điện trước khi thi công. [IMG:https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=1200|Sự chuẩn bị kỹ lưỡng giúp tiết kiệm hàng trăm triệu đồng]",
+            "content_en": "Methodology for cost control."
         },
         {
             "id": "real-estate-value",
@@ -108,11 +84,11 @@
             "category": "Đầu tư",
             "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
             "title_vi": "Bất động sản tăng giá 30% nhờ Thiết kế Chiến lược",
-            "title_en": "Boosting Property Value by 30% Through Strategic Design",
+            "title_en": "Boosting Property Value by 30%",
             "excerpt_vi": "Thiết kế không chỉ để ở, mà để gia tăng thanh khoản.",
-            "excerpt_en": "Design isn't just for living; it's for increasing liquidity.",
-            "content_vi": "### Thiết kế là đòn bẩy giá trị\n[IMG:https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200|Bất động sản cao cấp luôn cần dấu ấn kiến trúc độc bản]",
-            "content_en": "### Design is an Investment\nSmart investors see design as a value multiplier."
+            "excerpt_en": "Design for liquidity.",
+            "content_vi": "### Thiết kế là đòn bẩy giá trị\n[IMG:https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200|Dấu ấn kiến trúc độc bản]",
+            "content_en": "Investment perspective on design."
         },
         {
             "id": "scientific-fengshui",
@@ -120,23 +96,23 @@
             "category": "Phong thủy",
             "thumbnail": "https://images.unsplash.com/photo-1507652313519-d451737c04b8?q=80&w=1200&auto=format&fit=crop",
             "title_vi": "Phong thủy khoa học: Đừng để thầy bói phá hỏng kiến trúc",
-            "title_en": "Scientific Feng Shui: Beyond Superstition",
-            "excerpt_vi": "Giải mã Phong thủy dưới góc độ nhân trắc học và vi khí hậu học.",
-            "excerpt_en": "Decoding Feng Shui through the lens of microclimate science.",
-            "content_vi": "### Bản chất là Vi khí hậu\n[IMG:https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200|Ánh sáng tự nhiên và thông gió là chìa khóa]",
-            "content_en": "### It's All About Microclimate\nFeng Shui is essentially the study of energy flows: Wind and Water."
+            "title_en": "Scientific Feng Shui",
+            "excerpt_vi": "Giải mã Phong thủy dưới góc độ nhân trắc học.",
+            "excerpt_en": "Feng Shui through ergonomics.",
+            "content_vi": "### Bản chất là Vi khí hậu\n[IMG:https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200|Ánh sáng và thông gió]",
+            "content_en": "Climate science in architecture."
         },
         {
             "id": "materials-truth",
             "date": "16/04/2024",
             "category": "Vật liệu",
             "thumbnail": "https://images.unsplash.com/photo-1628527302488-34bb32a135ca?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Sự thật về gỗ công nghiệp: Bạn đang hít nhựa hay gỗ thật?",
+            "title_vi": "Sự thật về gỗ công nghiệp: Tiêu chuẩn E0/E1",
             "title_en": "The Truth About Engineered Wood",
-            "excerpt_vi": "Cách phân biệt tiêu chuẩn E0, E1 và sức khỏe hô hấp.",
-            "excerpt_en": "Importance of respiratory health in interior materials.",
-            "content_vi": "### Tiêu chuẩn E0/E1 là gì?\n[IMG:https://images.unsplash.com/photo-1625244724123-1f10bc97394c?q=80&w=1200|Vật liệu an toàn là nền tảng của tổ ấm]",
-            "content_en": "### Does 'New Home Smell' Actually Smell Good?\nFormaldehyde is a carcinogen to watch out for."
+            "excerpt_vi": "Phân biệt tiêu chuẩn an toàn cho sức khỏe hô hấp.",
+            "excerpt_en": "Respiratory health in materials.",
+            "content_vi": "### Tiêu chuẩn E1 là bắt buộc\n[IMG:https://images.unsplash.com/photo-1625244724123-1f10bc97394c?q=80&w=1200|Vật liệu an toàn]",
+            "content_en": "Safety standards."
         },
         {
             "id": "lighting-scenarios",
@@ -144,107 +120,107 @@
             "category": "Ánh sáng",
             "thumbnail": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=1200&auto=format&fit=crop",
             "title_vi": "Kịch bản ánh sáng: Lớp trang điểm vô hình",
-            "title_en": "Lighting Scenarios: Invisible Architecture",
-            "excerpt_vi": "Cách biến đổi không gian sống bằng ánh sáng đa tầng.",
-            "excerpt_en": "Transforming spaces with layered lighting strategies.",
-            "content_vi": "### 3 Lớp ánh sáng cần có\n[IMG:https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=1200|Ánh sáng tạo nên linh hồn cho ngôi nhà]",
-            "content_en": "### The 3 Essential Layers\nAmbient, Task, and Accent lighting."
+            "title_en": "Lighting Scenarios",
+            "excerpt_vi": "Biến đổi không gian bằng ánh sáng đa tầng.",
+            "excerpt_en": "Transforming spaces with light.",
+            "content_vi": "### 3 Lớp ánh sáng\n[IMG:https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=1200|Linh hồn ngôi nhà]",
+            "content_en": "The soul of design."
         },
         {
             "id": "small-apartment-ux",
             "date": "14/04/2024",
             "category": "UX Không gian",
             "thumbnail": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Căn hộ 45m2 nhưng rộng như 90m2: Tư duy UX",
-            "title_en": "45sqm Feeling Like 90sqm: The UX Mindset",
-            "excerpt_vi": "Giải pháp thiết kế thông minh xóa nhòa giới hạn diện tích.",
-            "excerpt_en": "Smart design solutions for compact living.",
-            "content_vi": "### Đồ nội thất \"Tàng hình\"\n[IMG:https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200|Gương giúp nhân đôi không gian hiệu quả]",
-            "content_en": "### Breaking Down the Walls\nNew UX thinking creates multi-functional zones."
+            "title_vi": "Căn hộ 45m2 nhưng rộng như 90m2",
+            "title_en": "45sqm Feeling Like 90sqm",
+            "excerpt_vi": "Thiết kế thông minh xóa nhòa giới hạn diện tích.",
+            "excerpt_en": "Blurring boundaries.",
+            "content_vi": "### Đồ nội thất đa năng\n[IMG:https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200|Gương nhân đôi không gian]",
+            "content_en": "Multi-functional zones."
         },
         {
             "id": "west-house-cooling",
             "date": "13/04/2024",
             "category": "Kỹ thuật",
             "thumbnail": "https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Nhà hướng Tây vẫn mát rượi: Lớp vỏ bao che",
-            "title_en": "Cool West-Facing Houses: Envelope Secrets",
-            "excerpt_vi": "Xử lý nhiệt cho nhà phố vùng nhiệt đới hiệu quả đến 80%.",
-            "excerpt_en": "Thermal management for tropical townhouses.",
-            "content_vi": "### Lớp vỏ kép (Double Skin)\n[IMG:https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?q=80&w=1200|Giải pháp làm mát thụ động bằng hệ lam chuyên dụng]",
-            "content_en": "### Don't Just Tilt the AC\nBlocking heat before it touches the walls is the sustainable way."
+            "title_vi": "Nhà hướng Tây vẫn mát rượi",
+            "title_en": "Cool West-Facing Houses",
+            "excerpt_vi": "Xử lý nhiệt hiệu quả đến 80%.",
+            "excerpt_en": "Tropical thermal management.",
+            "content_vi": "### Lớp vỏ kép\n[IMG:https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?q=80&w=1200|Hệ lam chuyên dụng]",
+            "content_en": "Double skin facades."
         },
         {
             "id": "contractor-management",
             "date": "12/04/2024",
             "category": "Thi công",
             "thumbnail": "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "6 Sai lầm khi chủ nhà tự làm nhà thầu",
-            "title_en": "6 Mistakes of DIY Contractor Management",
-            "excerpt_vi": "Tại sao việc tự quản lý thợ lẻ thường dẫn đến thảm họa chi phí.",
-            "excerpt_en": "Why DIY management often leads to budget overruns.",
-            "content_vi": "### Phí quản lý là phí bảo hiểm\n[IMG:https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200|Nhà thầu tổng giúp khớp nối kỹ thuật hoàn hảo]",
-            "content_en": "### The Illusion of Savings\nSeparate teams without a lead will blame each other."
+            "title_vi": "6 Sai lầm khi tự làm nhà thầu",
+            "title_en": "6 Mistakes of DIY Contracting",
+            "excerpt_vi": "Thảm họa chi phí khi tự quản lý thợ lẻ.",
+            "excerpt_en": "Budget disasters.",
+            "content_vi": "### Phí quản lý là bảo hiểm\n[IMG:https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200|Khớp nối kỹ thuật]",
+            "content_en": "Risk management."
         },
         {
             "id": "ai-design-future",
             "date": "11/04/2024",
             "category": "Công nghệ",
             "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "AI Design: Khi kiến trúc sư chỉ là người bấm nút?",
-            "title_en": "AI Design: The Future of Architecture",
-            "excerpt_vi": "AI đang thay đổi quy trình làm nghề tại các studio hàng đầu.",
-            "excerpt_en": "How AI transforms professional design workflows.",
-            "content_vi": "### AI không thay thế con người\n[IMG:https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200|AI là cánh tay nối dài của sức sáng tạo]",
-            "content_en": "### AI Replaces Slowness, Not Heart\nArchitects remain the emotional core of design."
+            "title_vi": "AI Design: Tương lai ngành kiến trúc",
+            "title_en": "AI Design Future",
+            "excerpt_vi": "AI đang thay đổi quy trình làm việc.",
+            "excerpt_en": "Transforming workflows.",
+            "content_vi": "### AI là công cụ sáng tạo\n[IMG:https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200|Sức sáng tạo vượt bậc]",
+            "content_en": "Creative enhancement."
         },
         {
             "id": "maintenance-guide",
             "date": "10/04/2024",
             "category": "Vận hành",
             "thumbnail": "https://images.unsplash.com/photo-1581578731522-aa7a10246261?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Bảo trì nhà sau 2 năm: Tránh gánh nặng tổ ấm",
-            "title_en": "Home Maintenance Guide",
-            "excerpt_vi": "Hạng mục bắt buộc phải kiểm tra để giữ nhà luôn mới.",
-            "excerpt_en": "Essential checklist for pristine home condition.",
-            "content_vi": "### Ngôi nhà là cơ thể sống\n[IMG:https://images.unsplash.com/photo-1581578731522-aa7a10246261?q=80&w=1200|Thăm khám định kỳ hệ thống điện nước]",
-            "content_en": "### Living Body Checklist\nKeep your assets healthy with 6-month checkups."
+            "title_vi": "Bảo trì nhà sau 2 năm",
+            "title_en": "2-Year Home Maintenance",
+            "excerpt_vi": "Hạng mục bắt buộc giữ nhà luôn mới.",
+            "excerpt_en": "Pristine condition checklist.",
+            "content_vi": "### Thăm khám định kỳ\n[IMG:https://images.unsplash.com/photo-1581578731522-aa7a10246261?q=80&w=1200|An tâm sử dụng]",
+            "content_en": "Periodic checkups."
         },
         {
             "id": "biophilic-design",
             "date": "09/04/2024",
             "category": "Xu hướng",
             "thumbnail": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Thiết kế Biophilic: Ốc đảo xanh trong nhà phố",
+            "title_vi": "Thiết kế Biophilic: Ốc đảo xanh",
             "title_en": "Biophilic Design Oasis",
-            "excerpt_vi": "Mang thiên nhiên vào nhà không chỉ là đặt cây cảnh.",
-            "excerpt_en": "More than just placing potted plants.",
-            "content_vi": "### Thiên nhiên trong từng hơi thở\n[IMG:https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200|Mảng xanh giúp tái tạo năng lượng mỗi ngày]",
-            "content_en": "### Breathable Nature\nLight and water sounds reduce stress significantly."
+            "excerpt_vi": "Mang thiên nhiên vào nhà phố.",
+            "excerpt_en": "Nature at home.",
+            "content_vi": "### Tái tạo năng lượng\n[IMG:https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200|Mảng xanh nuôi dưỡng tâm hồn]",
+            "content_en": "Stress reduction."
         },
         {
             "id": "cashflow-management",
             "date": "08/04/2024",
             "category": "Tài chính",
             "thumbnail": "https://images.unsplash.com/photo-1454165833222-d1d6a915160b?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Quản trị dòng tiền: Kiểm soát phát sinh dưới 5%",
-            "title_en": "Construction Cashflow Control",
-            "excerpt_vi": "Lập kế hoạch tài chính thực tế cho dự án mơ ước.",
-            "excerpt_en": "Realistic financial planning strategies.",
-            "content_vi": "### Phân bổ 70-20-10\n[IMG:https://images.unsplash.com/photo-1454165833222-d1d6a915160b?q=80&w=1200|Minh bạch tài chính đem lại sự an tâm tuyệt đối]",
-            "content_en": "### The Budget Split\nAllocate correctly for core construction and styling."
+            "title_vi": "Quản trị dòng tiền xây dựng",
+            "title_en": "Construction Cashflow",
+            "excerpt_vi": "Kế hoạch tài chính cho dự án mơ ước.",
+            "excerpt_en": "Financial planning.",
+            "content_vi": "### Phân bổ 70-20-10\n[IMG:https://images.unsplash.com/photo-1454165833222-d1d6a915160b?q=80&w=1200|Minh bạch tài chính]",
+            "content_en": "Budgeting strategies."
         },
         {
             "id": "kids-space-growth",
             "date": "07/04/2024",
             "category": "Giáo dục",
             "thumbnail": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Không gian trẻ em: Thiết kế kích thích trí tuệ",
-            "title_en": "Kids' Spaces for Cognitive Growth",
-            "excerpt_vi": "Tại sao không nên lạm dụng quá nhiều màu sắc sặc sỡ?",
-            "excerpt_en": "Avoid over-saturation for better focus.",
-            "content_vi": "### Sự yên tĩnh để sáng tạo\n[IMG:https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200|Tông màu nhẹ nhàng nuôi dưỡng sự sáng tạo]",
-            "content_en": "### Quietude for Creativity\nPastel tones help focus better than chaos."
+            "title_vi": "Không gian trẻ em: Trí tuệ & Sáng tạo",
+            "title_en": "Kids' Cognitive Spaces",
+            "excerpt_vi": "Thiết kế nuôi dưỡng sự phát triển.",
+            "excerpt_en": "Designing for growth.",
+            "content_vi": "### Tông màu Pastel nhẹ nhàng\n[IMG:https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200|Yên tĩnh để học hỏi]",
+            "content_en": "Focus and creativity."
         }
     ]
 }
