@@ -57,6 +57,14 @@
     "backBtn": "GO BACK",
     "nextBtn": "PROCEED"
   },
+  "handbook": {
+    "title": "NM Handbook",
+    "subtitle": "Expert Knowledge & Real-world Experience",
+    "readMore": "READ MORE",
+    "backToList": "Back to list",
+    "searchPlaceholder": "Search insights...",
+    "noResults": "No matching content found."
+  },
   "footer": {
     "desc": "The Vanguard of Interior Design, Architecture & AI Visualization.",
     "quickLinks": "Quick Navigation",

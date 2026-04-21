@@ -57,6 +57,14 @@
     "backBtn": "QUAY LẠI",
     "nextBtn": "TIẾP TỤC"
   },
+  "handbook": {
+    "title": "Cẩm Nang NM",
+    "subtitle": "Kiến thức chuyên gia & Kinh nghiệm thực tế",
+    "readMore": "ĐỌC TIẾP",
+    "backToList": "Quay lại danh sách",
+    "searchPlaceholder": "Tìm kiếm kiến thức...",
+    "noResults": "Không tìm thấy nội dung phù hợp."
+  },
   "footer": {
     "desc": "Studio Thiết kế Nội thất, Kiến trúc & AI hàng đầu.",
     "quickLinks": "Liên Kết Nhanh",

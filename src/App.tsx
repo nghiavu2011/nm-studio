@@ -14,6 +14,8 @@ import { DEFAULT_CONTENT } from './constants';
 import { useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
 
+import HandbookDetail from './pages/HandbookDetail';
+
 const App = () => {
     const location = useLocation();
     const [content, setContent] = useState<any>(DEFAULT_CONTENT);
@@ -75,7 +77,8 @@ const App = () => {
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
-                <Route path="/handbook" element={<Handbook />} />
+                <Route path="/handbook/:id" element={<HandbookDetail content={content} />} />
+                <Route path="/handbook" element={<Handbook content={content} />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/project/:id" element={<ProjectDetail projects={content.projects || []} />} />
                 <Route path="/brief" element={<BriefWizard />} />
