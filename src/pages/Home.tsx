@@ -71,7 +71,7 @@ const Home = ({ content }: HomeProps) => {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-5xl md:text-7xl font-heading font-bold mb-4 leading-tight drop-shadow-lg"
                     >
-                        {t('home.heroTitle').split('\\n').map((line: string, i: number) => <React.Fragment key={i}>{line}<br/></React.Fragment>)}
+                        {(t('home.heroTitle') || '').split('\\n').map((line: string, i: number) => <React.Fragment key={i}>{line}<br/></React.Fragment>)}
                     </motion.h1>
                     <motion.p 
                         initial={{ opacity: 0, y: 20 }}
