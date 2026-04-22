@@ -75,7 +75,7 @@ const Footer = () => {
 
             {/* Bottom Bar */}
             <div className="container mx-auto px-6 mt-20 pt-8 text-center text-[10px] text-white/50 uppercase tracking-[0.4em]">
-                © 2024 N&M Studio. All rights reserved. Excellence in Every Design.
+                © 2024 N&M Studio. All rights reserved. Excellence in Every Design. <span className="opacity-30">v3.0.0-FIXED</span>
             </div>
         </footer>
     );

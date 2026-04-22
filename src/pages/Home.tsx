@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Coins, Plus, Wand2 } from 'lucide-react';
+import { Coins, Plus, Wand2, Calendar, ArrowRight } from 'lucide-react';
 import { collection, getDocs } from 'firebase/firestore';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -209,58 +209,68 @@ const Home = ({ content }: HomeProps) => {
                 </div>
             </section>
 
-            <section id="projects" ref={projectsRef} className="py-24 bg-gray-50 overflow-hidden">
-                <div className="container mx-auto px-6">
-                    <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                        <div className="w-full md:w-1/2">
-                            <h4 className="text-brand-primary font-bold text-xs uppercase tracking-[0.3em] mb-4 uppercase">{t('home.projectsTitle')}</h4>
-                            <h2 className="text-4xl font-heading font-bold uppercase tracking-widest transition-all animate-fadeIn">{activeHeader}</h2>
-                        </div>
-                        <div className="w-full md:w-1/2 flex justify-end">
-                            <div className="flex flex-wrap gap-2 justify-end bg-white/50 p-2 border border-gray-100 rounded-sm">
-                                {(project_categories || []).map((cat: any) => (
-                                    <button key={cat.id} onClick={() => { setActiveProjectCategory(cat.id); setShowAllProjects(false); }} className={`px-4 py-2 text-[10px] font-bold uppercase tracking-widest transition-all ${activeProjectCategory === cat.id ? 'bg-brand-primary text-white shadow-sm' : 'text-gray-400 hover:text-brand-primary'}`}>
-                                        {cat.label}
-                                    </button>
-                                ))}
+            {/* Expert Handbook Highlights */}
+            {content.handbook && content.handbook.length > 0 && (
+                <section className="py-24 bg-white overflow-hidden border-t border-gray-50">
+                    <div className="container mx-auto px-6">
+                        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                            <div className="w-full md:w-1/2">
+                                <h4 className="text-brand-primary font-black text-[11px] uppercase tracking-[0.5em] mb-4">{t('handbook.intellectualProperty')}</h4>
+                                <h2 className="text-4xl md:text-5xl font-heading font-black uppercase tracking-widest leading-tight">
+                                    {t('header.handbook')}
+                                </h2>
+                            </div>
+                            <div className="w-full md:w-1/2 flex justify-end">
+                                <button 
+                                    onClick={() => navigate('/handbook')}
+                                    className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 hover:text-brand-primary transition-all flex items-center gap-4 group"
+                                >
+                                    {t('home.viewAllBtn')} <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
+                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {visibleProjects.length > 0 ? (
-                            visibleProjects.map((p: any) => (
-                                <div key={p.id} onClick={() => navigate(`/project/${p.id}`)} className="group cursor-pointer bg-white overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 rounded-sm">
-                                    <div className="relative overflow-hidden aspect-[4/3]">
-                                        <img src={p.gallery[0] || 'placeholder.jpg'} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt={p.title} />
-                                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
-                                    </div>
-                                    <div className="p-8 flex justify-between items-center text-center">
-                                        <div className="w-full">
-                                            <h3 className="text-xl font-bold mb-2 group-hover:text-brand-primary transition-colors uppercase">{p.title}</h3>
-                                            <p className="text-[10px] text-gray-500 uppercase tracking-widest font-bold">{p.floors} • {p.area} • {p.style}</p>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                            {content.handbook.slice(0, 3).map((article: any, i: number) => (
+                                <motion.div
+                                    key={article.id}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: i * 0.1 }}
+                                    onClick={() => navigate(`/handbook/${article.id}`)}
+                                    className="group cursor-pointer"
+                                >
+                                    <div className="aspect-[16/11] overflow-hidden rounded-sm mb-8 relative bg-gray-50">
+                                        <img src={article.thumbnail} alt="Handbook" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" />
+                                        <div className="pt-8 border-t border-gray-50 flex justify-between items-center group/more">
+                                            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 group-hover:text-brand-primary transition-colors">
+                                                {t('handbook.exploreStory')}
+                                            </span>
+                                            <ArrowRight className="w-5 h-5 text-gray-200 group-hover:text-brand-primary group-hover:translate-x-2 transition-all" />
                                         </div>
                                     </div>
-                                </div>
-                            ))
-                        ) : (
-                            <div className="col-span-full py-20 text-center opacity-40">
-                                <p className="text-[10px] uppercase font-bold tracking-widest">Đang cập nhật thêm dự án trong mục này...</p>
-                            </div>
-                        )}
-                    </div>
-
-                    {!showAllProjects && filteredProjects.length > 3 && (
-                        <div className="flex justify-center mt-16 animate-fadeIn">
-                            <button
-                                onClick={() => setShowAllProjects(true)}
-                                className="border-2 border-[#705d3f] text-[#705d3f] px-12 py-4 text-[12px] font-bold uppercase tracking-[0.3em] hover:bg-[#705d3f] hover:text-white transition-all rounded-sm shadow-md flex items-center gap-4 group"
-                            >
-                                {t('home.viewAllBtn')} <Plus className="w-4 h-4 group-hover:rotate-90 transition-transform" />
-                            </button>
+                                    <div className="flex items-center gap-3 text-[9px] font-bold text-gray-300 uppercase tracking-widest mb-4">
+                                        <Calendar className="w-3 h-3" /> {article.date}
+                                    </div>
+                                    <h3 className="text-xl font-heading font-bold text-gray-900 group-hover:text-brand-primary transition-colors uppercase tracking-tight leading-tight mb-4 line-clamp-2">
+                                        {i18n.language === 'vi' ? article.title_vi : article.title_en}
+                                    </h3>
+                                    <p className="text-gray-400 text-sm italic font-light line-clamp-2 mb-6">
+                                        {i18n.language === 'vi' ? article.excerpt_vi : article.excerpt_en}
+                                    </p>
+                                    <button 
+                                        className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-primary mb-6 flex items-center gap-2 group/btn"
+                                    >
+                                        {t('handbook.readMore')} <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
+                                    </button>
+                                    <div className="w-12 h-0.5 bg-gray-100 group-hover:w-20 group-hover:bg-brand-primary transition-all duration-500"></div>
+                                </motion.div>
+                            ))}
                         </div>
-                    )}
-                </div>
-            </section>
+                    </div>
+                </section>
+            )}
         </>
     );
 };

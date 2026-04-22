@@ -1,5 +1,6 @@
 {
   "header": {
+    "about": "VỀ CHÚNG TÔI",
     "projects": "DỰ ÁN",
     "services": "DỊCH VỤ",
     "handbook": "CẨM NANG",
@@ -15,12 +16,12 @@
     "before": "Phác thảo / Ý tưởng",
     "after": "Diễn hoạ AI",
     "stats": {
-      "projectsTitle": "Dự án Thiết Kế",
-      "projectsDesc": "Hoàn thiện cao cấp",
-      "rendersTitle": "Bản Diễn Họa",
-      "rendersDesc": "Phát triển qua AI",
-      "awardsTitle": "Giải Thưởng",
-      "awardsDesc": "Thiết kế Sáng tạo"
+      "projectsTitle": "Năm Kinh Nghiệm",
+      "projectsDesc": "Thực chiến & Chuyên môn",
+      "rendersTitle": "Công Trình Hoàn Thiện",
+      "rendersDesc": "Thiết kế & Thi công",
+      "awardsTitle": "Tỉnh Thành / Quốc Gia",
+      "awardsDesc": "Phạm vi hoạt động"
     },
     "philosophyTitle": "Triết Lý Sáng Tạo",
     "philosophySub": "Mỗi đường nét đều là sự đo lường chi tiết giữa thẩm mỹ và tính khả thi",
@@ -63,7 +64,11 @@
     "readMore": "ĐỌC TIẾP",
     "backToList": "Quay lại danh sách",
     "searchPlaceholder": "Tìm kiếm kiến thức...",
-    "noResults": "Không tìm thấy nội dung phù hợp."
+    "noResults": "Không tìm thấy nội dung phù hợp.",
+    "keepReading": "Tiếp tục khám phá",
+    "exploreStory": "KHÁM PHÁ CHI TIẾT",
+    "readArticle": "ĐỌC BÀI VIẾT",
+    "intellectualProperty": "Kiến thức Chuyên gia"
   },
   "footer": {
     "desc": "Studio Thiết kế Nội thất, Kiến trúc & AI hàng đầu.",

@@ -1,30 +1,10 @@
 {
     "nav_items": [
-        {
-            "label": "VỀ CHÚNG TÔI",
-            "href": "#story",
-            "view": "about"
-        },
-        {
-            "label": "DỊCH VỤ",
-            "href": "#services",
-            "view": "services"
-        },
-        {
-            "label": "DỰ ÁN",
-            "href": "#projects",
-            "view": "home"
-        },
-        {
-            "label": "CẨM NANG",
-            "href": "#blog",
-            "view": "handbook"
-        },
-        {
-            "label": "LIÊN HỆ",
-            "href": "#contact",
-            "view": "contact"
-        }
+        { "label": "VỀ CHÚNG TÔI", "href": "#story", "view": "about" },
+        { "label": "DỊCH VỤ", "href": "#services", "view": "services" },
+        { "label": "DỰ ÁN", "href": "#projects", "view": "home" },
+        { "label": "CẨM NANG", "href": "#blog", "view": "handbook" },
+        { "label": "LIÊN HỆ", "href": "#contact", "view": "contact" }
     ],
     "hero_images": [
         "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=2000",
@@ -34,100 +14,29 @@
         "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=2000"
     ],
     "project_categories": [
-        {
-            "id": "all",
-            "label": "Tất cả",
-            "header": "TẤT CẢ DỰ ÁN"
-        },
-        {
-            "id": "arch",
-            "label": "Thiết kế kiến trúc",
-            "header": "THIẾT KẾ KIẾN TRÚC"
-        },
-        {
-            "id": "interior",
-            "label": "Thiết kế nội thất",
-            "header": "THIẾT KẾ NỘI THẤT"
-        },
-        {
-            "id": "construction",
-            "label": "Thi Công",
-            "header": "THI CÔNG HOÀN THIỆN"
-        },
-        {
-            "id": "cgi",
-            "label": "Diễn họa CGI",
-            "header": "DIỄN HỌA CGI"
-        },
-        {
-            "id": "ai",
-            "label": "Dịch Vụ AI",
-            "header": "SÁNG TẠO BẰNG AI"
-        }
+        { "id": "all", "label": "Tất cả", "header": "TẤT CẢ DỰ ÁN" },
+        { "id": "arch", "label": "Thiết kế kiến trúc", "header": "THIẾT KẾ KIẾN TRÚC" },
+        { "id": "interior", "label": "Thiết kế nội thất", "header": "THIẾT KẾ NỘI THẤT" },
+        { "id": "construction", "label": "Thi Công", "header": "THI CÔNG HOÀN THIỆN" },
+        { "id": "cgi", "label": "Diễn họa CGI", "header": "DIỄN HỌA CGI" },
+        { "id": "ai", "label": "Dịch Vụ AI", "header": "SÁNG TẠO BẰNG AI" }
     ],
     "projects": [
         {
             "id": 1,
             "title": "Indochine Apartment",
-            "location": "Hà Nội",
-            "year": "2024",
-            "category": "interior",
-            "type": "Thi công",
-            "style": "Indochine",
-            "floors": "1 Tầng",
-            "area": "85m2",
-            "description": "Căn hộ phong cách Indochine với sự kết hợp tinh tế giữa nét hoài cổ và hiện đại. Không gian được tối ưu hóa với các chi tiết gỗ truyền thống kết hợp vật liệu cao cấp, tạo nên cảm giác ấm cúng và sang trọng.",
-            "gallery": [
-                "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1200",
-                "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200",
-                "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&q=80&w=1200",
-                "https://images.unsplash.com/photo-1615529328331-f8917597711f?auto=format&fit=crop&q=80&w=1200"
-            ]
-        },
-        {
-            "id": 2,
-            "title": "L's Townhouse",
-            "location": "Hà Nội",
-            "year": "2023",
-            "category": "arch",
-            "type": "Thiết kế",
-            "style": "Hiện đại",
-            "floors": "3 Tầng",
-            "area": "6x18m",
-            "description": "Nhà phố hiện đại tối ưu không gian và ánh sáng tự nhiên. Thiết kế tập trung vào sự thông thoáng, sử dụng kính cường lực lớn và các khoảng thông tầng đón gió tự nhiên.",
-            "gallery": [
-                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200",
-                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
-                "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1200",
-                "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=2000"
-            ]
+            "location": "Hà Nội", "year": "2024", "category": "interior", "type": "Thi công", "style": "Indochine", "floors": "1 Tầng", "area": "85m2",
+            "description": "Căn hộ phong cách Indochine với sự kết hợp tinh tế giữa nét hoài cổ và hiện đại.",
+            "gallery": ["https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1200"]
         }
     ],
     "services": [
-        {
-            "title": "THIẾT KẾ KIẾN TRÚC",
-            "img": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=600"
-        },
-        {
-            "title": "THIẾT KẾ NỘI THẤT",
-            "img": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=600"
-        },
-        {
-            "title": "THI CÔNG HOÀN THIỆN",
-            "img": "https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=600"
-        },
-        {
-            "title": "TƯ VẤN GIÁM SÁT",
-            "img": "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=600"
-        },
-        {
-            "title": "DIỄN HOẠ CGI",
-            "img": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=80&w=600"
-        },
-        {
-            "title": "SÁNG TẠO BẰNG AI",
-            "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600"
-        }
+        { "title": "THIẾT KẾ KIẾN TRÚC", "img": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=600" },
+        { "title": "THIẾT KẾ NỘI THẤT", "img": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=600" },
+        { "title": "THI CÔNG HOÀN THIỆN", "img": "https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=600" },
+        { "title": "TƯ VẤN GIÁM SÁT", "img": "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=600" },
+        { "title": "DIỄN HOẠ CGI", "img": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=80&w=600" },
+        { "title": "SÁNG TẠO BẰNG AI", "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600" }
     ],
     "handbook": [
         {
@@ -140,178 +49,178 @@
             "title_en": "D&B Contracts: 7 \"Clause Traps\" That Could Cost You Billions",
             "excerpt_vi": "Kinh nghiệm thực tế để bảo vệ túi tiền và quyền lợi của chủ đầu tư trước những điều khoản mập mờ.",
             "excerpt_en": "Defending your investment against ambiguous clauses with professional legal insights.",
-            "content_vi": "### Câu chuyện xương máu\nHơn 10 năm làm nghề, chúng tôi chứng kiến không ít chủ nhà phải \"ngậm đắng nuốt cay\" vì tin vào những bản hợp đồng mẫu sơ sài. Đây không chỉ là tờ giấy, nó là lá chắn duy nhất của bạn khi công trường nổi sóng.\n\n### Bẫy số 1: \"Vật liệu tương đương\"\nĐây là cụm từ nguy hiểm nhất. Thế nào là tương đương? Nếu không có mã màu, hãng sản xuất và thông số kỹ thuật (Spec) chi tiết, nhà thầu có thể đưa vào những vật liệu rẻ tiền hơn nhưng có ngoại hình giống 80%.\n\n### Bẫy số 2: Phạt tiến độ mập mờ\nĐa số hợp đồng chỉ ghi phạt 0.1%/ngày chậm trễ nhưng không nêu rõ thời điểm bàn giao các giai đoạn. Hãy yêu cầu mốc tiến độ (Milestone) cụ thể.\n\n### Lời khuyên định giá\nĐừng nhìn vào con số tổng cuối cùng, hãy nhìn vào sự chi tiết của phụ lục vật liệu. Một nhà thầu minh bạch luôn sợ bạn không hiểu rõ vật liệu.",
-            "content_en": "### The Painful Reality\nIn over a decade of practice, we've seen homeowners suffer because of poorly drafted contracts. This isn't just paper; it's your primary shield when site issues arise.\n\n### Trap #1: \"Equivalent Materials\"\nThe most dangerous phrase. Define 'equivalent'. Without specific brand names, serial numbers, and technical specs, contractors can use cheaper look-alikes.\n\n### Trap #2: Vague Delay Penalties\nDaily penalties are meaningless without defined milestones. Ensure fixed dates for structural completion, ME installation, and final handover.\n\n### Professional Insight\nDon't look at the bottom line; look at the detail in the material annex. A transparent contractor wants you to understand exactly what you're buying."
+            "content_vi": "### Câu chuyện xương máu\nHơn 10 năm làm nghề, chúng tôi chứng kiến không ít chủ nhà phải \"ngậm đắng nuốt cay\" vì tin vào những bản hợp đồng mẫu sơ sài. Một bản hợp đồng lỏng lẻo không chỉ gây thiệt hại về tiền bạc mà còn phá hỏng hoàn toàn trải nghiệm xây dựng tổ ấm của bạn.\n\n[IMG:https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200|Ký kết hợp đồng là bước quan trọng nhất bảo vệ quyền lợi chủ đầu tư]\n\n### Bẫy số 1: Cụm từ \"Vật liệu tương đương\"\nĐây là cụm từ nguy hiểm nhất. Thế nào là tương đương? Nếu không có mã màu, hãng sản xuất và thông số kỹ thuật (Spec) chi tiết, nhà thầu có thể đưa vào những vật liệu rẻ tiền hơn nhưng có ngoại hình giống 80%.\n\n**Lời khuyên: Phụ lục vật liệu phải chi tiết đến từng thương hiệu, mã sản phẩm và đơn giá tại thời điểm ký kết.**",
+            "content_en": "Defending your investment against ambiguous clauses."
+        },
+        {
+            "id": "kitchen-ergonomics",
+            "date": "20/04/2024",
+            "category": "Công năng",
+            "thumbnail": "https://images.unsplash.com/photo-1556911220-e15595b6a981?q=80&w=1200&auto=format&fit=crop",
+            "featured": true,
+            "title_vi": "Tam giác vàng: Tủ lạnh - Chậu rửa - Bếp nấu. Bí mật của căn bếp 5 sao",
+            "title_en": "The Golden Triangle: Fridge - Sink - Stove. Secrets of a 5-Star Kitchen",
+            "excerpt_vi": "Quy tắc nhân trắc học giúp tối ưu hóa luồng di chuyển, xóa tan mệt mỏi khi nấu nướng.",
+            "excerpt_en": "Ergonomic rules for optimized movement flows in your kitchen.",
+            "content_vi": "### Tại sao bạn mệt mỏi khi vào bếp?\nHầu hết lỗi thiết kế bếp đến từ việc đặt sai vị trí các thiết bị chính. Bạn phải đi bộ quá nhiều giữa việc lấy đồ ăn - rửa rau - và đứng bếp nấu.\n\n[IMG:https://images.unsplash.com/photo-1556911220-e15595b6a981?q=80&w=1200|Căn bếp hiện đại cần ưu tiên sự luân chuyển hợp lý của 3 điểm chính]\n\n### Quy tắc Tam Giác Vàng (Work Triangle)\nĐây là tam giác được tạo bởi 3 điểm: Tủ lạnh (Lưu trữ) - Chậu rửa (Sơ chế) - Bếp nấu (Chế biến). \n\n- **Khoảng cách lý tưởng:** Tổng 3 cạnh tam giác phải nằm trong khoảng 4m đến 8m.\n- **Khoảng cách mỗi cạnh:** Không được ngắn hơn 1.2m và không được dài hơn 2.7m.\n\n[IMG:https://images.unsplash.com/photo-1565182999561-18d7dc63c393?q=80&w=1200|Bố trí bếp hình chữ L hoặc chữ U giúp tối ưu tam giác vàng nhất]\n\n### Chiều cao bếp chuẩn Việt Nam\nChiều cao bếp dưới lý tưởng là 81cm - 86cm để tránh đau lưng khi đứng nấu lâu.",
+            "content_en": "Ergonomic rules for optimized movement flows in your kitchen."
         },
         {
             "id": "construction-budget",
-            "date": "20/04/2024",
+            "date": "19/04/2024",
             "category": "Ngân sách",
             "thumbnail": "https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=1200&auto=format&fit=crop",
             "featured": true,
             "title_vi": "Tại sao xây nhà luôn phát sinh 20%? Cách NM Studio kiểm soát dưới 5%",
-            "title_en": "Why Construction Always Overruns by 20%? How We Control It Under 5%",
-            "excerpt_vi": "Phân tích hố đen tài chính trong xây dựng và quy trình dự toán chuẩn công nghiệp.",
-            "excerpt_en": "Analyzing the financial black hole in construction and industrial-standard estimation workflows.",
-            "content_vi": "### Hố đen của sự \"Tùy hứng\"\nLý do lớn nhất khiến chi phí đội lên là việc đổi ý giữa chừng. Nhưng sâu xa hơn, đó là do hồ sơ thiết kế ban đầu không đủ sâu.\n\n**Bạn không thể báo giá chính xác những gì bạn chưa vẽ rõ.**\n\n### Cách chúng tôi vận hành\nTại NM Studio, quy trình BIM (Building Information Modeling) cho phép chúng tôi đếm chính xác từng mét dây điện, từng kg vữa trước khi viên gạch đầu tiên được đặt xuống.\n\n### Tip dành cho chủ nhà\nHãy dành ít nhất 2 tháng cho giai đoạn thiết kế. Đừng vội vàng thi công khi hồ sơ kỹ thuật còn chưa hoàn thiện. Sự vội vã lúc đầu luôn được trả giá bằng tiền mặt về sau.",
-            "content_en": "### The Black Hole of Spontaneity\nThe primary reason for cost overruns is mid-project changes. Deep down, it's caused by superficial initial designs.\n\n**You cannot accurately price what has not been clearly drawn.**\n\n### Our Methodology\nAt NM Studio, our BIM (Building Information Modeling) workflow allows us to count every meter of wiring and every kg of mortar before the first brick is laid.\n\n### Tip for Owners\nDedicate at least 2 months to the design phase. Never rush into construction while technical documents are incomplete. Early haste is always paid for in late-stage cash."
+            "title_en": "Why Construction Always Overruns by 20%?",
+            "excerpt_vi": "Phân tích hố đen tài chính và quy trình dự toán chuẩn công nghiệp.",
+            "excerpt_en": "Analyzing the financial black hole in construction.",
+            "content_vi": "### Quy trình BIM tại NM Studio\nChúng tôi đếm chính xác từng mét dây điện trước khi thi công. [IMG:https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=1200|Sự chuẩn bị kỹ lưỡng giúp tiết kiệm hàng trăm triệu đồng]",
+            "content_en": "Methodology for cost control."
         },
         {
             "id": "real-estate-value",
-            "date": "19/04/2024",
+            "date": "18/04/2024",
             "category": "Đầu tư",
             "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
-            "featured": true,
-            "title_vi": "Bất động sản tăng giá 30% chỉ nhờ thay đổi Tư duy Thiết kế",
-            "title_en": "Boosting Property Value by 30% Through Strategic Design Thinking",
-            "excerpt_vi": "Góc nhìn từ nhà đầu tư: Thiết kế không chỉ để ở, mà để gia tăng thanh khoản.",
-            "excerpt_en": "An investor's perspective: Design isn't just for living; it's for increasing liquidity.",
-            "content_vi": "### Thiết kế là sự đầu tư, không phải chi phí\nHầu hết mọi người coi phí thiết kế là tiền mất đi. Nhà đầu tư thông minh coi đó là đòn bẩy giá trị.\n\n### Công thức \"Thanh khoản\"\nMột ngôi nhà tối giản, vật liệu bền vững và công năng linh hoạt luôn dễ bán hoặc cho thuê giá cao hơn 20-30% so với những ngôi nhà trang trí rườm rà, lỗi mốt.\n\n### Bí mật từ nhà môi giới\nNgười mua nhà hiện đại mua \"Lối sống\" chứ không mua \"Gạch ngói\". Việc tạo ra các không gian Storytelling (có câu chuyện) sẽ khiến khách hàng sẵn sàng xuống tiền nhanh hơn.",
-            "content_en": "### Design is an Investment, Not a Cost\nMost see design fees as a loss. Smart investors see them as a value multiplier.\n\n### The Liquidity Formula\nA minimalist home with sustainable materials and flexible functionality consistently sells or rents 20-30% higher than over-decorated, dated properties.\n\n### The Broker's Secret\nModern buyers buy a 'Lifestyle', not just 'Bricks'. Creating Storytelling spaces makes clients close deals significantly faster."
+            "title_vi": "Bất động sản tăng giá 30% nhờ Thiết kế Chiến lược",
+            "title_en": "Boosting Property Value by 30%",
+            "excerpt_vi": "Thiết kế không chỉ để ở, mà để gia tăng thanh khoản.",
+            "excerpt_en": "Design for liquidity.",
+            "content_vi": "### Thiết kế là đòn bẩy giá trị\n[IMG:https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200|Dấu ấn kiến trúc độc bản]",
+            "content_en": "Investment perspective on design."
         },
         {
             "id": "scientific-fengshui",
-            "date": "18/04/2024",
+            "date": "17/04/2024",
             "category": "Phong thủy",
             "thumbnail": "https://images.unsplash.com/photo-1507652313519-d451737c04b8?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Phong thủy khoa học: Đừng để thầy bói phá hỏng kiến trúc nhà bạn",
-            "title_en": "Scientific Feng Shui: Don't Let Superstition Ruin Your Architecture",
-            "excerpt_vi": "Giải mã Phong thủy dưới góc độ nhân trắc học và vi khí hậu học.",
-            "excerpt_en": "Decoding Feng Shui through the lens of ergonomics and microclimate science.",
-            "content_vi": "### Sự nhầm lẫn giữa Tín ngưỡng và Khoa học\nPhong thủy thực chất là bộ môn nghiên cứu về dòng chảy của năng lượng: Gió (Phong) và Nước (Thủy). Nó không liên quan đến việc đặt tỳ hưu hay treo bùa chú.\n\n### Bản chất là Vi khí hậu\nNếu phòng ngủ của bạn không có gió lưu thông, bạn sẽ khó ngủ. Nếu ánh sáng quá gắt, bạn sẽ dễ cáu gắt. Đó chính là Phong thủy xấu.\n\n**Phong thủy tốt nhất là sự bố trí công năng khoa học nhất.**",
-            "content_en": "### Confusing Belief with Science\nFeng Shui is essentially the study of energy flows: Wind (Phong) and Water (Thủy). It's not about mystical statues or charms.\n\n### It's All About Microclimate\nIf your bedroom lacks ventilation, you won't sleep well. If lighting is too harsh, you'll be irritable. That is 'Bad Feng Shui'.\n\n**The best Feng Shui is the most scientific functional layout.**"
+            "title_vi": "Phong thủy khoa học: Đừng để thầy bói phá hỏng kiến trúc",
+            "title_en": "Scientific Feng Shui",
+            "excerpt_vi": "Giải mã Phong thủy dưới góc độ nhân trắc học.",
+            "excerpt_en": "Feng Shui through ergonomics.",
+            "content_vi": "### Bản chất là Vi khí hậu\n[IMG:https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200|Ánh sáng và thông gió]",
+            "content_en": "Climate science in architecture."
         },
         {
             "id": "materials-truth",
-            "date": "17/04/2024",
+            "date": "16/04/2024",
             "category": "Vật liệu",
             "thumbnail": "https://images.unsplash.com/photo-1628527302488-34bb32a135ca?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Sự thật về gỗ công nghiệp: Bạn đang hít nhựa hay gỗ thật?",
-            "title_en": "The Truth About Engineered Wood: Are You Breathing Plastic or Wood?",
-            "excerpt_vi": "Cách phân biệt tiêu chuẩn E0, E1 và tầm quan trọng của sức khỏe hô hấp trong nội thất.",
-            "excerpt_en": "Distinguishing E0, E1 standards and the importance of respiratory health in interiors.",
-            "content_vi": "### Mùi \"nhà mới\" có thực sự thơm?\nCái mùi hắc đặc trưng của nội thất mới chính là Formaldehyde – một chất gây ung thư. \n\n### Tiêu chuẩn E0/E1 là gì?\nTại NM Studio, chúng tôi chỉ sử dụng gỗ đạt tiêu chuẩn E1 trở lên. Đây là tiêu chuẩn bắt buộc tại Châu Âu để đảm bảo lượng phát thải khí độc nằm trong ngưỡng an toàn cho trẻ em.\n\n**Đừng vì tiết kiệm vài triệu đồng mà đổi lấy sức khỏe của cả gia đình suốt 10 năm.**",
-            "content_en": "### Does 'New Home Smell' Actually Smell Good?\nThat sharp, distinctive scent in new interiors is Formaldehyde – a carcinogen.\n\n### What are E0/E1 Standards?\nAt NM Studio, we exclusively use E1-standard wood or higher. This is a mandatory European standard ensuring toxic emissions are safe for children.\n\n**Don't save a few hundred dollars at the expense of your family's health for the next decade.**"
+            "title_vi": "Sự thật về gỗ công nghiệp: Tiêu chuẩn E0/E1",
+            "title_en": "The Truth About Engineered Wood",
+            "excerpt_vi": "Phân biệt tiêu chuẩn an toàn cho sức khỏe hô hấp.",
+            "excerpt_en": "Respiratory health in materials.",
+            "content_vi": "### Tiêu chuẩn E1 là bắt buộc\n[IMG:https://images.unsplash.com/photo-1625244724123-1f10bc97394c?q=80&w=1200|Vật liệu an toàn]",
+            "content_en": "Safety standards."
         },
         {
             "id": "lighting-scenarios",
-            "date": "16/04/2024",
+            "date": "15/04/2024",
             "category": "Ánh sáng",
             "thumbnail": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Kịch bản ánh sáng: Lớp trang điểm vô hình của kiến trúc",
-            "title_en": "Lighting Scenarios: The Invisible Makeup of Architecture",
-            "excerpt_vi": "Cách biến đổi không gian sống chỉ bằng việc thay đổi kịch bản chiếu sáng.",
-            "excerpt_en": "Transforming living spaces simply by pivoting your lighting strategy.",
-            "content_vi": "### Tại sao nhà bạn không giống như Render?\nPhần lớn là do ánh sáng. Một căn phòng chỉ có một chiếc đèn trần chính giữa sẽ trở nên phẳng lì và thiếu cảm xúc.\n\n### 3 Lớp ánh sáng cần có\n1. Ambient (Tổng thể)\n2. Task (Chức năng)\n3. Accent (Điểm nhấn)\n\n**Ánh sáng không phải để làm sáng, mà để tạo bóng đổ.**",
-            "content_en": "### Why Doesn't Your House Look Like the Render?\nMostly because of lighting. A room with just one central ceiling light becomes flat and soul-less.\n\n### The 3 Essential Layers\n1. Ambient (Overall)\n2. Task (Functional)\n3. Accent (Atmospheric)\n\n**Lighting isn't about brightness; it's about creating shadows.**"
+            "title_vi": "Kịch bản ánh sáng: Lớp trang điểm vô hình",
+            "title_en": "Lighting Scenarios",
+            "excerpt_vi": "Biến đổi không gian bằng ánh sáng đa tầng.",
+            "excerpt_en": "Transforming spaces with light.",
+            "content_vi": "### 3 Lớp ánh sáng\n[IMG:https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=1200|Linh hồn ngôi nhà]",
+            "content_en": "The soul of design."
         },
         {
             "id": "small-apartment-ux",
-            "date": "15/04/2024",
+            "date": "14/04/2024",
             "category": "UX Không gian",
             "thumbnail": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Căn hộ 45m2 nhưng rộng như 90m2: Tư duy UX Không gian",
-            "title_en": "45sqm Feeling Like 90sqm: The Space UX Mindset",
-            "excerpt_vi": "Giải pháp thiết kế thông minh xóa nhòa giới hạn diện tích.",
-            "excerpt_en": "Smart design solutions that blur the boundaries of square footage.",
-            "content_vi": "### Phá bỏ những bức tường ngăn\nTư duy cũ là chia nhỏ phòng. Tư duy UX mới là tạo ra không gian đa năng (Multi-function).\n\n### Đồ nội thất \"Tàng hình\"\nSử dụng hệ tủ kịch trần cùng màu với tường và gương lớn được đặt đúng góc sẽ đánh lừa thị giác người nhìn, khiến không gian dường như vô tận.",
-            "content_en": "### Breaking Down the Walls\nOld thinking divides into small rooms. New UX thinking creates multi-functional zones.\n\n### 'Invisible' Furniture\nUsing floor-to-ceiling cabinets matched to wall colors and strategically placed mirrors deceives the eye, making space feel infinite."
+            "title_vi": "Căn hộ 45m2 nhưng rộng như 90m2",
+            "title_en": "45sqm Feeling Like 90sqm",
+            "excerpt_vi": "Thiết kế thông minh xóa nhòa giới hạn diện tích.",
+            "excerpt_en": "Blurring boundaries.",
+            "content_vi": "### Đồ nội thất đa năng\n[IMG:https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200|Gương nhân đôi không gian]",
+            "content_en": "Multi-functional zones."
         },
         {
             "id": "west-house-cooling",
-            "date": "14/04/2024",
+            "date": "13/04/2024",
             "category": "Kỹ thuật",
             "thumbnail": "https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Nhà hướng Tây vẫn mát rượi: Bí mật của lớp vỏ bao che",
-            "title_en": "Cool West-Facing Houses: The Secret of building Envelope",
-            "excerpt_vi": "Kỹ thuật xử lý nhiệt cho nhà phố vùng nhiệt đới hiệu quả đến 80%.",
-            "excerpt_en": "Thermal management techniques for tropical townhouses, effective up to 80%.",
-            "content_vi": "### Đừng chỉ bật điều hòa\nGiải pháp bền vững là ngăn nhiệt ngay từ khi nó chưa chạm vào tường nhà bạn.\n\n### Lớp vỏ kép (Double Skin)\nThiết kế các hệ lam chắn nắng hoặc mảng xanh phía trước ban công tạo ra vùng đệm khí mát, giúp giảm nhiệt độ bề mặt tường đến 10 độ C.",
-            "content_en": "### Don't Just Crank Up the AC\nThe sustainable solution is blocking heat before it even touches your walls.\n\n### Double Skin Facades\nDesigning sunshade louvers or green layers in front of balconies creates a cool air buffer, reducing wall surface temperatures by up to 10 degrees Celsius."
+            "title_vi": "Nhà hướng Tây vẫn mát rượi",
+            "title_en": "Cool West-Facing Houses",
+            "excerpt_vi": "Xử lý nhiệt hiệu quả đến 80%.",
+            "excerpt_en": "Tropical thermal management.",
+            "content_vi": "### Lớp vỏ kép\n[IMG:https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?q=80&w=1200|Hệ lam chuyên dụng]",
+            "content_en": "Double skin facades."
         },
         {
             "id": "contractor-management",
-            "date": "13/04/2024",
+            "date": "12/04/2024",
             "category": "Thi công",
             "thumbnail": "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "6 Sai lầm \"Xương máu\" khi chủ nhà tự mình làm nhà thầu",
-            "title_en": "6 Painful Mistakes When Owners Act as Contractors",
-            "excerpt_vi": "Tại sao việc tự quản lý thợ lẻ thường dẫn đến thảm họa chi phí và chất lượng.",
-            "excerpt_en": "Why DIY contractor management often leads to budget and quality disasters.",
-            "content_vi": "### Ảo tưởng về việc tiết kiệm\nBạn nghĩ rằng tự gọi thợ điện, thợ nước sẽ rẻ hơn? Sai. Các đội thợ lẻ không có tiếng nói chung sẽ đổ lỗi cho nhau khi xảy ra lỗi.\n\n### Phí quản lý là phí bảo hiểm\nMột nhà thầu tổng thể không chỉ quản lý con người mà còn quản lý rủi ro và khớp nối kỹ thuật.",
-            "content_en": "### The Illusion of Savings\nThink hiring separate electricians and plumbers is cheaper? Wrong. Separate teams without a unified lead will blame each other when errors occur.\n\n### Management Fees are Insurance Fees\nA general contractor doesn't just manage people; they manage risk and technical synchronization."
+            "title_vi": "6 Sai lầm khi tự làm nhà thầu",
+            "title_en": "6 Mistakes of DIY Contracting",
+            "excerpt_vi": "Thảm họa chi phí khi tự quản lý thợ lẻ.",
+            "excerpt_en": "Budget disasters.",
+            "content_vi": "### Phí quản lý là bảo hiểm\n[IMG:https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200|Khớp nối kỹ thuật]",
+            "content_en": "Risk management."
         },
         {
             "id": "ai-design-future",
-            "date": "12/04/2024",
+            "date": "11/04/2024",
             "category": "Công nghệ",
             "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "AI Design: Khi kiến trúc sư chỉ là người bấm nút? Sự thật phía sau",
-            "title_en": "AI Design: Architects as Button Pushers? The Reality Behind It",
-            "excerpt_vi": "Cách AI đang thực sự thay đổi quy trình làm nghề tại các studio hàng đầu.",
-            "excerpt_en": "How AI is genuinely transforming professional workflows at top design studios.",
-            "content_vi": "### AI không thay thế con người, nó thay thế sự chậm chạp\nAI giúp chúng tôi thử nghiệm 100 phương án màu sắc trong 1 phút, nhưng để biết phương án nào \"Chạm\" được vào cảm xúc chủ nhà thì vẫn cần trái tim người làm nghề.\n\n### Lợi ích cho chủ đầu tư\nBạn nhận được bản diễn họa ý tưởng nhanh hơn 10 lần, đồng nghĩa với việc có nhiều thời gian hơn để tinh chỉnh chi tiết.",
-            "content_en": "### AI Doesn't Replace People; It Replaces Slowness\nAI helps us test 100 color schemes in 1 minute, but knowing which one 'Touches' the homeowner's soul still requires a human heart.\n\n### Investor Benefits\nYou receive concept visualizations 10x faster, meaning more time for refining details."
-        },
-        {
-            "id": "kitchen-ergonomics",
-            "date": "11/04/2024",
-            "category": "Công năng",
-            "thumbnail": "https://images.unsplash.com/photo-1556911220-e15595b6a981?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Bếp chuẩn công năng: Nơi giữ lửa hay nơi trữ rác?",
-            "title_en": "Ergonomic Kitchens: The Heart of Home or a Junk Storage?",
-            "excerpt_vi": "Quy tắc tam giác vàng và cách bố trí bếp cho người bận rộn.",
-            "excerpt_en": "Golden Triangle rules and kitchen layouts for busy modern lives.",
-            "content_vi": "### Tam giác vàng: Tủ lạnh - Chậu rửa - Bếp nấu\nNếu khoảng cách này quá xa, bạn sẽ mệt mỏi trong chính bếp nhà mình. \n\n### Phân khu lưu trữ\nThiết kế bếp hiện đại cần ưu tiên các phụ kiện thông minh để tối ưu góc chết tàng hình.",
-            "content_en": "### The Golden Triangle: Fridge - Sink - Stove\nIf this distance is too large, you'll feel exhausted in your own kitchen.\n\n### Storage Zoning\nModern kitchen design must prioritize smart accessories to optimize 'invisible' dead corners."
+            "title_vi": "AI Design: Tương lai ngành kiến trúc",
+            "title_en": "AI Design Future",
+            "excerpt_vi": "AI đang thay đổi quy trình làm việc.",
+            "excerpt_en": "Transforming workflows.",
+            "content_vi": "### AI là công cụ sáng tạo\n[IMG:https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200|Sức sáng tạo vượt bậc]",
+            "content_en": "Creative enhancement."
         },
         {
             "id": "maintenance-guide",
             "date": "10/04/2024",
             "category": "Vận hành",
             "thumbnail": "https://images.unsplash.com/photo-1581578731522-aa7a10246261?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Bảo trì nhà sau 2 năm: Đừng để tổ ấm trở thành gánh nặng",
-            "title_en": "Home Maintenance: Don't Let Your House Become a Burden",
-            "excerpt_vi": "Những hạng mục bắt buộc phải kiểm tra để giữ nhà luôn mới.",
-            "excerpt_en": "Essential checklist to keep your home in pristine condition.",
-            "content_vi": "### Ngôi nhà là cơ thể sống\nNó cần được thăm khám định kỳ. Hệ thống điện nước, silicon phòng tắm thường là những nơi đi xuống đầu tiên.\n\n### Checklist 6 tháng\nKiểm tra khe co giãn của gỗ, vệ sinh lưới lọc điều hòa và kiểm tra các dấu hiệu thấm ngược.",
-            "content_en": "### The House as a Living Body\nIt requires periodic check-ups. MEP systems and bathroom silicone are usually the first to degrade.\n\n### 6-Month Checklist\nCheck wood expansion joints, clean AC filters, and look for signs of reverse leakage."
+            "title_vi": "Bảo trì nhà sau 2 năm",
+            "title_en": "2-Year Home Maintenance",
+            "excerpt_vi": "Hạng mục bắt buộc giữ nhà luôn mới.",
+            "excerpt_en": "Pristine condition checklist.",
+            "content_vi": "### Thăm khám định kỳ\n[IMG:https://images.unsplash.com/photo-1581578731522-aa7a10246261?q=80&w=1200|An tâm sử dụng]",
+            "content_en": "Periodic checkups."
         },
         {
             "id": "biophilic-design",
             "date": "09/04/2024",
             "category": "Xu hướng",
             "thumbnail": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Thiết kế Biophilic: Biến nhà phố chật hẹp thành ốc đảo xanh",
-            "title_en": "Biophilic Design: Turning Townhouses into Green Oases",
-            "excerpt_vi": "Mang thiên nhiên vào nhà không chỉ là đặt vài chậu cây.",
-            "excerpt_en": "Integrating nature is more than just placing a few potted plants.",
-            "content_vi": "### Thiên nhiên trong từng hơi thở\nÁnh sáng xuyên qua khe lá, âm thanh của nước chảy và vật liệu tự nhiên (đám đá, gỗ nguyên bản) giúp giảm Stress đáng kể.",
-            "content_en": "### Nature in Every Breath\nLight filtered through leaves, the sound of water, and raw materials (stone, unfinished wood) significantly reduce stress levels."
+            "title_vi": "Thiết kế Biophilic: Ốc đảo xanh",
+            "title_en": "Biophilic Design Oasis",
+            "excerpt_vi": "Mang thiên nhiên vào nhà phố.",
+            "excerpt_en": "Nature at home.",
+            "content_vi": "### Tái tạo năng lượng\n[IMG:https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200|Mảng xanh nuôi dưỡng tâm hồn]",
+            "content_en": "Stress reduction."
         },
         {
             "id": "cashflow-management",
             "date": "08/04/2024",
             "category": "Tài chính",
             "thumbnail": "https://images.unsplash.com/photo-1454165833222-d1d6a915160b?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Quản trị dòng tiền xây dựng: Cách kiểm soát phát sinh dưới 5%",
-            "title_en": "Construction Cashflow: Controlling Overruns below 5%",
-            "excerpt_vi": "Lập kế hoạch tài chính thực tế cho dự án mơ ước.",
-            "excerpt_en": "Realistic financial planning for your dream project.",
-            "content_vi": "### Phân bổ ngân sách 70-20-10\n70% cho thi công cơ bản, 20% cho nội thất rời và 10% cho dự phòng rủi ro cứng.",
-            "content_en": "### The 70-20-10 Budget Split\n70% for basic construction, 20% for loose furniture, and 10% for fixed contingencies."
+            "title_vi": "Quản trị dòng tiền xây dựng",
+            "title_en": "Construction Cashflow",
+            "excerpt_vi": "Kế hoạch tài chính cho dự án mơ ước.",
+            "excerpt_en": "Financial planning.",
+            "content_vi": "### Phân bổ 70-20-10\n[IMG:https://images.unsplash.com/photo-1454165833222-d1d6a915160b?q=80&w=1200|Minh bạch tài chính]",
+            "content_en": "Budgeting strategies."
         },
         {
             "id": "kids-space-growth",
             "date": "07/04/2024",
             "category": "Giáo dục",
             "thumbnail": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200&auto=format&fit=crop",
-            "title_vi": "Không gian cho trẻ em: Thiết kế để kích thích trí tuệ",
-            "title_en": "Kids' Spaces: Designing for Cognitive Growth",
-            "excerpt_vi": "Tại sao phòng trẻ em không nên quá nhiều màu sắc sặc sỡ?",
-            "excerpt_en": "Why kids' rooms shouldn't be overly saturated with colors.",
-            "content_vi": "### Sự yên tĩnh để sáng tạo\nMột không gian màu sắc Pastel nhẹ nhàng giúp trẻ tập trung hơn vào các hoạt động sáng tạo thay vì bị xao nhãng bởi thị giác quá mức.",
-            "content_en": "### Quietude for Creativity\nA space with soft pastel tones helps children focus better on creative activities rather than being over-stimulated visually."
+            "title_vi": "Không gian trẻ em: Trí tuệ & Sáng tạo",
+            "title_en": "Kids' Cognitive Spaces",
+            "excerpt_vi": "Thiết kế nuôi dưỡng sự phát triển.",
+            "excerpt_en": "Designing for growth.",
+            "content_vi": "### Tông màu Pastel nhẹ nhàng\n[IMG:https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200|Yên tĩnh để học hỏi]",
+            "content_en": "Focus and creativity."
         }
     ]
 }

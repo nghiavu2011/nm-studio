@@ -49,7 +49,7 @@ const App = () => {
     }, []);
 
     useEffect(() => {
-        fetch('/content.json')
+        fetch(`/content.json?v=${Date.now()}`)
             .then(res => res.json())
             .then(data => {
                 setContent(data);

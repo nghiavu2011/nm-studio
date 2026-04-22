@@ -1,5 +1,6 @@
 {
   "header": {
+    "about": "ABOUT US",
     "projects": "PROJECTS",
     "services": "SERVICES",
     "handbook": "HANDBOOK",
@@ -15,12 +16,12 @@
     "before": "Form / Concept",
     "after": "AI Visualization",
     "stats": {
-      "projectsTitle": "Completed Projects",
-      "projectsDesc": "Premium Finished Spaces",
-      "rendersTitle": "Visual Renders",
-      "rendersDesc": "Generated via AI",
-      "awardsTitle": "Design Awards",
-      "awardsDesc": "Creative Accolades"
+      "projectsTitle": "Years Experience",
+      "projectsDesc": "Expertise & Practice",
+      "rendersTitle": "Completed Projects",
+      "rendersDesc": "Design & Build",
+      "awardsTitle": "Provinces / Countries",
+      "awardsDesc": "Operational Range"
     },
     "philosophyTitle": "Curated Philosophy",
     "philosophySub": "Every curve and angle is a precise orchestration of aesthetics and pure feasibility.",
@@ -62,8 +63,12 @@
     "subtitle": "Expert Knowledge & Real-world Experience",
     "readMore": "READ MORE",
     "backToList": "Back to list",
-    "searchPlaceholder": "Search insights...",
-    "noResults": "No matching content found."
+    "searchPlaceholder": "Search knowledge...",
+    "noResults": "No results found.",
+    "keepReading": "Keep Exploring",
+    "exploreStory": "EXPLORE FULL STORY",
+    "readArticle": "READ ARTICLE",
+    "intellectualProperty": "Expert Insights"
   },
   "footer": {
     "desc": "The Vanguard of Interior Design, Architecture & AI Visualization.",
