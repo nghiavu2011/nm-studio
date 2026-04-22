@@ -47,6 +47,7 @@ const HandbookDetail = ({ content }: HandbookDetailProps) => {
     const excerpt = currentLang === 'vi' ? article.excerpt_vi : article.excerpt_en;
 
     const renderContent = (text: string) => {
+        if (!text) return null;
         const paragraphs = text.split('\n\n');
         return paragraphs.map((paragraph, i) => {
             // Handle Images: [IMG:url|caption]
