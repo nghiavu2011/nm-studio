@@ -18,7 +18,7 @@ const Home = ({ content }: HomeProps) => {
     const navigate = useNavigate();
     const location = useLocation();
     const projectsRef = useRef<HTMLDivElement>(null);
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const [activeProcessTab, setActiveProcessTab] = useState<keyof typeof PROCESS_DATA>('arch');
     const [activeProjectCategory, setActiveProjectCategory] = useState('all');
